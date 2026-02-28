@@ -2,7 +2,7 @@
 
 Desenvolvimento de um sistema web para gerenciamento de receitas culinárias de uso própio, com autenticação de usuários e persistência de dados.
 
-### Equipe: Gabriele Alves, Clarisse Gondim e José Vianney
+### Equipe: Gabriele Alves, Clarisse Gondim e José Vianei
 
 ## Funcionalidades Iniciais:
 
