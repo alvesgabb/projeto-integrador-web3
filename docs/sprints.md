@@ -1,4 +1,4 @@
-# 📝 Registro das Sprints
+# Registro das Sprints
 
 ## Sprint 1
 
@@ -7,10 +7,9 @@
 
 ### Tarefas planejadas
 
-
-| Tarefa | Responsável | Status |
-|:-----------|:-----------|:-----------|
-| Configuração do trello | Clarisse | Em andamento |
-| Criação do repositorio de configuração do GitHub | Gabriele | Em andamento |
-| Criação e preenchimento da estrutura de arquivos | Gabriele | Em andamento |
-| Criar a primeira ata | Vianney | Em andamento |
+| Tarefa                                           | Responsável | Status       |
+| :----------------------------------------------- | :---------- | :----------- |
+| Configuração do trello                           | Clarisse    | Em andamento |
+| Criação do repositorio de configuração do GitHub | Gabriele    | Em andamento |
+| Criação e preenchimento da estrutura de arquivos | Gabriele    | Em andamento |
+| Criar a primeira ata                             | Vianney     | Em andamento |
