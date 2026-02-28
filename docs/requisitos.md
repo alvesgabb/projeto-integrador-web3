@@ -1,4 +1,4 @@
-# 📋 Requisitos do Sistema
+# Requisitos do Sistema
 
 ## Requisitos Funcionais (RF)
 
