@@ -2,7 +2,7 @@
 
 ## Reunião 1 - 27/02/2026
 
-_Participantes:_ Gabriele Alves, José Vianney e Clarisse Gondim
+_Participantes:_ Gabriele Alves, José Vianei e Clarisse Gondim
 
 _Duração:_ 42 minutos
 
@@ -16,7 +16,7 @@ _Objetivos:_ Definir o tema do projeto e organizar as primeiras responsabilidade
 - Estudo da linguagem Markdown.
 - Organização e uso do Trello.
 
-## Decições
+## Decisões
 
 - Clarisse definida como líder da equipe.
 - Gabriele responsável pela criação do repósitorio.

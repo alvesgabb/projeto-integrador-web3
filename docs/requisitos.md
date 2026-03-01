@@ -22,4 +22,4 @@
 
 - **RNF04:** O sistema deve garantir a integridade dos dados armazenados no banco.
 
-- **RNF05** O sistema deve responde às requisições em tempo adequado.
+- **RNF05:** O sistema deve responder às requisições em tempo adequado.
