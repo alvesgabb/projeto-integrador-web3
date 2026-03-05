@@ -26,3 +26,33 @@ _Objetivos:_ Definir o tema do projeto e organizar as primeiras responsabilidade
 ## Pendências
 
 - Organizar o quadro no Trello.
+
+# Atas de Reunião unidade II
+
+## Reunião 2 - 02/03/2026
+
+Participantes: Gabriele Alves, José Vianei e Clarisse Gondim
+
+Duração: 54 minutos
+
+Objetivos: Definir e organizar as primeiras atividades dos membros da equipe dentro do projeto.
+
+## Tópicos discutidos
+
+- criação da primeira brench dos integrantes da equipe no Git/Github.
+- Definição dos primeiros blocos de codigos do projeto.
+- Divisao entre os menbors dos blocos de codigos definidos.
+- realizar as primeiras adequações do Trello.
+
+## Decisões
+
+- Clarisse ficará responsavel pela criação de uma das duas rotas definidas e criação de uma brench.
+- Clarisse alterações necessarias dentro do Trello para organização das tarefas
+- Gabriele responsável pela criação de uma das duas rotas definidas e criação de uma brench.
+- Gabriele alteração dos sprints da semana
+- Vianei responsavél pela atualização da ata da reunião e criação de uma brench.
+- Vianei criação do servidor e midleres.
+
+## Pendências
+
+- Sem.
