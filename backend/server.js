@@ -1,7 +1,7 @@
 // Aqui se faz os importes
 const express = require("express");
 const cors = require("cors");
-const receitaRoutes = require("./routes/receitaRoutes");
+const receitasRoutes = require("./routes/receitasRoutes");
 
 const app = express();
 const PORT = 3000;
@@ -11,17 +11,16 @@ app.use(express.json());
 
 
 // Monta as rotas criar receita
-app.use('/receita' , receitaRoutes);
+app.use('/receitas' , receitasRoutes);
 
-// Rota raiz
-//app.get("/", (req , res)=> {
-  //  res.json({res: "API funcionando"});
-//});
+app.get("/", (req , res)=> {
+   res.json({res: "API funcionando"});
+});
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
 
 
-//Essa branch é a estrutura do backend
+
 
