@@ -2,15 +2,15 @@ const receitaMoldel = require("../models/receitaModel");
 
 
 //GET 
-// Função de listar todas as receitas
+// Função de listar receitas
 function getAll(req, res) {
   try{
-    const receita = receitaMoldel.listarTodos()
-      res.json(receita)
+    const receitas = receitaMoldel.listarTodos();
+      res.json(receitas);
   }
   catch(err){
     console.error("Erro ao listar receita:",err);
-    res.status(500).json({erro:"Erro ao listar receita."})
+    res.status(500).json({erro:"Erro ao listar receita."});
   }
 }
 
@@ -24,14 +24,15 @@ const {nome, ingredientes, modo_preparo } = req.body;
     return res.status(400).json({ error: "Todos os campos são obrigatórios" });
   }
 
-  const receita = receitaMoldel.criar({nome,ingredientes,modo_preparo});
+  const receita = receitaMoldel.criar({nome, ingredientes, modo_preparo});
 
   console.log("Receita adicionada:", receita);
+
   return res.status(201).json(receita);
    }
    catch(err){
     console.error("Erro ao criar receita.",err)
-    return res.status(500).json(({erro:"Erro ao criar receita."}))
+    return res.status(500).json(({erro:"Erro ao criar receita."}));
    }
 }
 
@@ -42,4 +43,4 @@ const {nome, ingredientes, modo_preparo } = req.body;
 module.exports = {
     getAll,
     create
-}
+};
