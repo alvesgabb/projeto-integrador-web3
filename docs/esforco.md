@@ -1,6 +1,6 @@
 # Estimativas de Esforço (Planning Poker)
 
-# Primeira Sprint
+## Primeira Sprint
 
 | Tarefa                      | Story Points | Responsável                                | Observações                                  |
 | --------------------------- | ------------ | ------------------------------------------ | -------------------------------------------- |
@@ -9,7 +9,7 @@
 | criar/preencher arquivos    | 2            | Clarisse Gondim Gabriela Alves Jose Vianei | Clarice Cria a estrutura de pastas           |
 | Criar a primeira ata        | 3            | Jose Vianei                                | evidenciar no trello                         |
 
-# Segunda Sprint
+## Segunda Sprint
 
 | Rota cadastrar receitas | 5 | Clarisse Gondim | ja trabalhar em brench propia |
 | Atualizar trello | 2 | Clarisse Gondim | Apos a aula de quarta |
