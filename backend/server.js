@@ -1,6 +1,7 @@
 // Aqui se faz os importes
 const express = require("express");
 const cors = require("cors");
+const logger = require("./ middlewares/logger");
 const receitasRoutes = require("./routes/receitasRoutes");
 
 const app = express();
