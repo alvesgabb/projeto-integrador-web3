@@ -1,0 +1,1 @@
+[Link do Trello](https://trello.com/invite/b/69a034aba1a5ffd096de0a01/ATTI7349f454607e64dad0689d88e108260aED6CD471/sistemas-de-receitas-culinariashttps://trello.com/invite/b/69a034aba1a5ffd096de0a01/ATTI7349f454607e64dad0689d88e108260aED6CD471/sistemas-de-receitas-culinarias)
