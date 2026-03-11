@@ -35,3 +35,22 @@
 |-------|--------|----------------|--------------|-----------------|
 | 09/03/2026 | R1 | Alguns membros apresentaram dificuldades no uso com Git. | Foi sugerido utilizar o terminal do VS Code para executar comandos do git, em vez de usar interfaces externas. | Continuar praticando os comandos e apoiar membros com dúvidas. |
 |  |  |  |  |  |
+
+---
+
+## 4.  Estratégias Gerais de Mitigação
+
+- Planejar e dividir tarefas de forma clara e objetiva entre os membros da quipe.
+- Acompanhar o progresso do projeto e do cronograma definido.
+- Estudar de maneira prévia e praticar os assuntos das aulas.
+- Cada membro da equipe deve organizar seu tempo para entregar as tarefas realizadas dentro do prazo estabelicido.
+
+---
+
+## 3. Atualização e Monitoramento
+
+| Data | Risco | Situação Atual | Ação Tomada | Próximos Passos |
+|-------|--------|----------------|--------------|-----------------|
+| 10/03/2026 | R2, R3 | Alguns membros apresentaram atraso nas tarefas e falta de tempo por motivo de trabalho. | Foi sugerido que cada membro da equipe orgaze seu tempo e caso aconteça algum imprevisto que seja comunicado previamente no grupo de estudo do Whatsapp. | Organização das tarefas e comunição via Whatsapp. |
+|  |  |  |  |  |
+
