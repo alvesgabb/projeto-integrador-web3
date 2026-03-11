@@ -56,3 +56,77 @@ Objetivos: Definir e organizar as primeiras atividades dos membros da equipe den
 ## Pendências
 
 - Sem.
+
+# Atas de Reunião extraordinária:(Em substituição a "Braistorm")
+
+## Reunião 2.1 - 08/03/2026
+
+### Participantes: Gabriele Alves, José Vianei e Clarisse Gondim
+
+### Duração: 2h.04 minutos
+
+## Objetivos: Organizar as atividades da unidade II, das disciplina -Projeto Integrador II.
+
+1. Definição dos riscos do projeto.
+1. Definição da estimativa de esforço.
+1. Definir os responsáveis pelos temas das questoes.
+1. Definir quais os conteudos pendentes da disciplina Projeto integrador II.
+
+## Tópicos discutidos
+
+- riscos do projeto.
+- estimativa de esforço
+- utilização da ferramenta Planet Pocker.
+- entregas.
+
+## Decisões
+
+- Tratado arquivo RISCOS.md.
+- Tratado arquivo ESTIMATIVAS.md.
+- utilizado Planet Pocker.
+- Criação de sprints
+- Debates pendentes
+
+## Pendências
+
+### sem
+
+# Atas de Reunião unidade III
+
+## Reunião 3 - 09/03/2026
+
+### Participantes: Gabriele Alves, José Vianei e Clarisse Gondim
+
+### Duração: 1h.02 minutos
+
+## Objetivos: Organizar as atividades da unidade III, das disciplinas WEB3/Projeto \_Integrador_II.
+
+1. Definir a divisão para os membros da equipe do conteudo.
+1. finalizar os conteudos pendentes da semana II
+
+## Tópicos discutidos
+
+- Divisão da atividade (pendentes da semana II) da disciplina "Projeto integrador II".
+- Debate do tema abordade no AB da disciplina do dia (10/03/26)
+- criação do HTML
+- Divisao entre os menbros do conteudo das questoes:
+  Criacao da estrutura de arquivos e pastas
+  Divisao do arquivo Script.
+
+## Decisões
+
+- Clarisse ficará responsavel pela criação do HTML.
+- Clarisse alterações necessarias dentro do Trello.
+- Gabriele implementara no repositorio a funcionalidade de **confirmação** da mesclagem dos conteúdos na "Main".
+- Gabriele Criação do CSS.
+- Gabriele alteração dos sprints da semana
+- Vianei responsavél pela ata da reunião da semana.
+- Vianei criação do API.js.
+
+## Pendências
+
+### referentes a semana II
+
+- Criação do arquivo " Estimativas.Md.
+- Registro dos historyPoints no Trello.
+- Estimativas de esforço no Planet Poker.
