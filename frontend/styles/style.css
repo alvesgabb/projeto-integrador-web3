@@ -33,13 +33,11 @@ header {
     border-radius: 15px;
     padding: 20px;
     border: 1px solid #eee;
-    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
 }
 
 .card-receita:hover {
-    transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
@@ -47,8 +45,6 @@ header {
     color: #d35400;
     margin-bottom: 10px;
 }
-
-/* Escondendo o Modo de Preparo inicialmente */
 
 .btn-ver-mais {
     background-color: #e67e22;
@@ -63,4 +59,13 @@ header {
 
 .btn-ver-mais:hover {
     background-color: #d35400;
+}
+
+.detalhes-preparo {
+    display: none;
+    margin-top: 15px;
+}
+
+.card-receita.aberto .detalhes-preparo{
+    display: block;
 }
