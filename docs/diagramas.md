@@ -42,10 +42,10 @@ flowchart LR
     UC1((Listar receitas))
     UC2((Cadastrar receita))
     UC3((Ver detalhes da receita))
-
+    
     Usuario --> UC1
     Usuario --> UC2
-    Usuario --> UC3
+    UC3 -->|<<include>>| UC1
 ```
 
 **Descrição:** Representa os **atores** e **funcionalidades principais** do sistema.
@@ -57,6 +57,9 @@ Neste exemplo, o **Usuario** pode cadastrar receitas, vizualizar receitas cadast
 - **Atores:** Usuário
 
 - **Casos de Uso:** Cadastrar receita, Vizualizar receitas, Ver detalhe da receita
+
+**Relações:**
+- "Ver detalhe da receita" `<include>` "Vizualizar receitas"
 
 **Atualizado em:** 15/03/2026 - Equipe 1
 
