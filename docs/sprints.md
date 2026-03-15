@@ -30,3 +30,28 @@
 | Atualizar sprints                                | Gabriele    | Concluido    |
 | Criar servidor e middleware                      | Vianei      | Em andamento |
 | Atualizar ata                                    | Vianei      | Concluido    |
+
+
+## Sprint 3
+
+**Périodo:** 09/03 - 15/03
+**Objetivo da Sprint:** Começar a trabalhar no frontend.
+
+### Tarefas planejadas
+
+| Tarefa                                           | Responsável | Status       |
+| :----------------------------------------------- | :---------- | :----------- |
+| Construir html e app.js                          | Clarisse    | Concluido    |
+| Atualizar trello                                 | Clarisse    | Em andamento |
+| Criar diagrama de sequência                      | Clarisse    | Em andamento |
+| Criar estrutura do frontend                      | Gabriele    | Concluido    |
+| Construir css e ui.js                            | Gabriele    | Concluido    |
+| Atualizar sprints                                | Gabriele    | Em andamento |
+| Criar riscos.md                                  | Gabriele    | Concluido    |
+| Criar diagrama de caso de uso                    | Gabriele    | Em andamento |
+| Atualizar ata                                    | Vianei      | Concluido    |
+| Criar estimativas.md                             | Vianei      | Concluido    |
+| Construir api.js                                 | Vianei      | Concluido    |
+| Criar diagrama de entidades                      | Vianei      | Em andamento |
+
+
