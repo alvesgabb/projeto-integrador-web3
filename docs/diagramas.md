@@ -96,3 +96,4 @@ Neste exemplo, o **Usuario** pode cadastrar receitas, vizualizar receitas cadast
 
 - **Atualizado em:** 15/03/2026 - Equipe 1
 
+**Atualizado em:** 15/03/2026 - Equipe 1
