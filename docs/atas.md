@@ -115,10 +115,10 @@ Objetivos: Definir e organizar as primeiras atividades dos membros da equipe den
 
 ## Decisões
 
-- Clarisse ficará responsavel pela criação do HTML.
+- Clarisse ficará responsavel pela criação do HTML e app.js.
 - Clarisse alterações necessarias dentro do Trello.
 - Gabriele implementara no repositorio a funcionalidade de **confirmação** da mesclagem dos conteúdos na "Main".
-- Gabriele Criação do CSS.
+- Gabriele Criação do CSS e ui.js.
 - Gabriele alteração dos sprints da semana
 - Vianei responsavél pela ata da reunião da semana.
 - Vianei criação do API.js.
