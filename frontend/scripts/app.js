@@ -6,7 +6,7 @@ import { renderizarReceita } from './ui.js';
 
 async function listaReceitas() {
   try {
-    const receitas = await api.getReceitas();
+    const receitas = await api.getAllReceitas();
     renderizarReceita(receitas);
   } catch (erro) {
     console.error('Erro ao carregar receitas:', erro);
