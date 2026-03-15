@@ -55,4 +55,4 @@ Neste exemplo, o **Usuario** pode cadastrar receitas, vizualizar receitas cadast
 
 - **Casos de Uso:** Cadastrar receita, Vizualizar receitas, Ver detalhe da receita
 
-- **Atualizado em:** 15/03/2026 - Equipe 1
+**Atualizado em:** 15/03/2026 - Equipe 1
