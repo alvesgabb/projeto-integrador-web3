@@ -19,3 +19,16 @@
 | Atualizar sprints       | 2            | Gabriela Alves  | atender parametros da reuniao                |
 | Servidor middleware     | 2            | Jose Vianei     | atender requisitos do enunciado da atividade |
 | Atualizar a ata         | 1            | Jose Vianei     | atender parametros da reuniao                |
+
+## **Terceira Sprint (Unidade II-)** _09/03/2026 a 15/03/2026_
+
+| Tarefa                            | Story Points | Responsável     | Observações                                  |
+| --------------------------------- | ------------ | --------------- | -------------------------------------------- |
+| Criar arquivo INDEX.html          | 3            | Clarisse Gondim | ja trabalhar em brench propia                |
+| Criar arquivo STYLE.css           | 3            | Gabriela Alves  | ja trabalhar em brench propia                |
+| Atualizar trello                  | 2            | Clarisse Gondim | Atender requisitos do enunciado da atividade |
+| Atualizar Sprints                 | 2            | Gabriela Alves  | Atender requisitos do enunciado da atividade |
+| Criar arquivo APP.js              | 5            | Gabriela Alves  | atender requisitos do enunciado da atividade |
+| Criar arquivo UI.js               | 5            | Clarisse Gondim | atender requisitos do enunciado da atividade |
+| Criar arquivo API.js              | 5            | Jose Vianei     | atender requisitos do enunciado da atividade |
+| Atualizar arquivos estimativas.md | 1            | Jose Vianei     | atender parametros da reuniao                |
