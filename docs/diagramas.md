@@ -23,6 +23,45 @@
     • Armazenamento de usuários
     • Armazenamento de receitas de usuários
 
+ 
+```  
+
+# Diagrama de sequência 
+
+
+**Descrição:**
+```
+-  Usuário abre o site
+-  Frontend solicita receitas
+-  API recebe a requisição
+-  Controller busca as receitas
+-  Controller retorna os dados
+-  API envia os dados para o frontend
+-  Frontend mostra as receitas na tela
+```
+
+# Diagrama:
+````mermaid
+---
+config:
+  theme: dark
+---
+sequenceDiagram
+actor Usuario
+participant Frontend
+participant API
+participant Controller
+
+Usuario->>Frontend: Acessa página
+Frontend->>API: GET /receitas
+API->>Controller: getAll()
+Controller-->>API: retorna lista de receitas
+API-->>Frontend: JSON com receitas
+Frontend-->>Usuario: Exibe receitas na tela
+````
+
+**Atualizado em:** 15/03/2026 - equipe 1
+
 ```
 # Diagramas UML do projeto - Sistema de Receitas Culinarias 
 
@@ -54,5 +93,7 @@ Neste exemplo, o **Usuario** pode cadastrar receitas, vizualizar receitas cadast
 - **Atores:** Usuário
 
 - **Casos de Uso:** Cadastrar receita, Vizualizar receitas, Ver detalhe da receita
+
+- **Atualizado em:** 15/03/2026 - Equipe 1
 
 **Atualizado em:** 15/03/2026 - Equipe 1
