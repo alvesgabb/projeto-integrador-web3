@@ -21,30 +21,6 @@
   [ Banco de Dados ]
     • Armazenamento de usuários
     • Armazenamento de receitas de usuários
-```
 
-```mermaid
----
-config:
-  theme: dark
----
-erDiagram
-    RECEITA {
-        id int PK
-        nome string
-        ingredientes string
-        modo_preparo string
-    }
-    USUARIO {
-        id int PK
-        nome string
-        email string
-    }
-    CATEGORIA {
-        id int PK
-        nome string
-    }
 
-RECEITA ||--|{ CATEGORIA : possui
-USUARIO ||--|{ RECEITA : cria
 ```
