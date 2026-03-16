@@ -2,6 +2,7 @@
 
 ## Diagrama de fluxo
 
+
 ```text
   [ Usuário ]
        |
