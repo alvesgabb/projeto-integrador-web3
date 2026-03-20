@@ -40,7 +40,7 @@ flowchart LR
     UC1((Listar receitas))
     UC2((Cadastrar receita))
     UC3((Ver detalhes da receita))
-    
+
     Usuario --> UC1
     Usuario --> UC2
     UC3 -->|<<include>>| UC1
@@ -57,14 +57,7 @@ Neste exemplo, o **Usuario** pode cadastrar receitas, vizualizar receitas cadast
 - **Casos de Uso:** Cadastrar receita, Vizualizar receitas, Ver detalhe da receita
 
 **Relações:**
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 1c622618c0d8648202d9b00142d3715228d6d762
->>>>>>> main
 - "Ver detalhe da receita" `<include>` "Vizualizar receitas"
 
 **Atualizado em:** 15/03/2026 - Equipe 1
@@ -104,32 +97,29 @@ API-->>Frontend: JSON com receitas
 Frontend-->>Usuario: Exibe receitas na tela
 ```
 
-<<<<<<< HEAD
 ## **Atualizado em:** 15/03/2026 - equipe 1
 
-config:
-theme: dark
-
+```mermaid
 ---
-
+config:
+  theme: dark
+---
 erDiagram
-RECEITA {
-id int PK
-nome string
-ingredientes string
-modo_preparo string
-}
-USUARIO {
-id int PK
-nome string
-email string
-}
-CATEGORIA {
-id int PK
-nome string
-}
-RECEITA ||--o{ CATEGORIA : "possui"
-USUARIO ||--o{ RECEITA : "cria"
-=======
-**Atualizado em:** 15/03/2026 - equipe 1
->>>>>>> main
+    RECEITA {
+        id int PK
+        nome string
+        ingredientes string
+        modo_preparo string
+    }
+    USUARIO {
+        id int PK
+        nome string
+        email string
+    }
+    CATEGORIA {
+        id int PK
+        nome string
+    }
+    RECEITA ||--o{ CATEGORIA : "possui"
+    USUARIO ||--o{ RECEITA : "cria"
+```
