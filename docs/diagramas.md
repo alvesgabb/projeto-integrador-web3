@@ -2,7 +2,6 @@
 
 ## Diagrama de fluxo
 
-
 ```text
   [ Usuário ]
        |
@@ -98,4 +97,28 @@ API-->>Frontend: JSON com receitas
 Frontend-->>Usuario: Exibe receitas na tela
 ```
 
-**Atualizado em:** 15/03/2026 - equipe 1
+## **Atualizado em:** 15/03/2026 - equipe 1
+
+config:
+theme: dark
+
+---
+
+erDiagram
+RECEITA {
+id int PK
+nome string
+ingredientes string
+modo_preparo string
+}
+USUARIO {
+id int PK
+nome string
+email string
+}
+CATEGORIA {
+id int PK
+nome string
+}
+RECEITA ||--o{ CATEGORIA : "possui"
+USUARIO ||--o{ RECEITA : "cria"
