@@ -152,15 +152,15 @@ Objetivos: Definir e organizar as primeiras atividades dos membros da equipe den
 
 ## Decisões
 
-- Gabriele Criara app.jsx.
-- Gabriele SPRINTS/REQUIZITOS/STORY-POINTS.
-- Gabriele alterações necessarias Trello.
-- Clarissea lterações necessarias Trello.
-- Clarisse Criação de um componente.
+- Gabriele responsável App.jsx.
+- Gabriele Resposável por atualizar Sprints e Requisitos.
+- Gabriele Criação de um componente (CardReceita).
+- Clarissea alterações necessarias Trello.
+- Clarisse Criação de um componente (ReceitaForm).
 - Clarisse Criação da estrutura de pastas do frontend-React.
-- Vianei pendencia do Git/GitHub.
+- Vianei pendência do Git/GitHub.
 - Vianei Ata da reunião da semana.
-- Vianei Criação de um componente.
+- Vianei Criação de um componente (ReceitaLista).
 
 ## Pendências
 
