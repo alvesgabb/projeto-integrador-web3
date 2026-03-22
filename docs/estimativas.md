@@ -44,9 +44,9 @@
 | Criar a estrutura inicial do novo frontend | 3            | Clarisse Gondim | ja trabalhar em brench                       |
 | Cronstruir ReceitaForm                     | 5            | Clarisse Gondim | Atender requisitos do enunciado da atividade |
 | Atualizar trello                           | 2            | Clarisse Gondim | Atender requisitos do enunciado da atividade |
-| Cronstruir arquivo APP.jsx                 | 5            | Gabriela Alves  | ja trabalhar em brenc                        |
-| Atualizar Sprints                          | 2            | Gabriela Alves  | Atender requisitos do enunciado da atividade |
-| Construir CardReceita.jsx                  | 5            | Gabriela Alves  | atender requisitos do enunciado da atividade |
+| Cronstruir arquivo APP.jsx                 | 5            | Gabriele Alves  | ja trabalhar em branch                       |
+| Atualizar Sprints                          | 2            | Gabriele Alves  | Atender requisitos do enunciado da atividade |
+| Construir CardReceita.jsx                  | 5            | Gabriele Alves  | atender requisitos do enunciado da atividade |
 | Construir Receitalista                     | 5            | Jose Vianei     | atender requisitos do enunciado da atividade |
 | Atualizar Atas                             | 2            | Jose Vianei     | atender parametros da reunião                |
 | Revisar PR e merge no GitHub               | 2            | Todos           | atender parametros da reuniao                |

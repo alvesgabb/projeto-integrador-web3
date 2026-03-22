@@ -35,7 +35,7 @@
 |-------|--------|----------------|--------------|-----------------|
 | 09/03/2026 | R1 | Alguns membros apresentaram dificuldades no uso com Git. | Foi sugerido utilizar o terminal do VS Code para executar comandos do git, em vez de usar interfaces externas. | Continuar praticando os comandos e apoiar membros com dúvidas. |  10/03/2026 | R2, R3 | Alguns membros apresentaram atraso nas tarefas e falta de tempo por motivo de trabalho. | Foi sugerido que cada membro da equipe orgaze seu tempo e caso aconteça algum imprevisto que seja comunicado previamente no grupo de estudo do Whatsapp. | Organização das tarefas e comunição via Whatsapp. |
 | 10/03/2026  | R2, R3 | Alguns membros apresentaram atraso nas tarefas e falta de tempo por motivo de trabalho. | Foi sugerido que cada membro da equipe orgaze seu tempo e caso aconteça algum imprevisto que seja comunicado previamente no grupo de estudo do Whatsapp. | Organização das tarefas e comunição via Whatsapp. |
-|  |  |  |  |  |
+| 22/03/26 | R1 | Um membro aprensentou dificuldade no uso do git e resolução de conflitos de merge.  | Foi suregido que o membro sempre mantenha a branch main local atualizada antes de iniciar qualquer alteração. | Continuar praticando os comandos e revisar Pull Requests da equipe. |
 
 
 ---

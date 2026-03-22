@@ -8,9 +8,11 @@
 
 - **RF03:** O sistema deve permitir que o usuário cadastre receitas.
 
-- **RF04:** O sistema deve permitir que o usuário vizualize apenas as suas própias receitas.
+- **RF04:** O sistema deve permitir que o usuário exclua receitas.
 
-- **RF05:** O sistema deve armazenar as informações de usuários e receitas no banco de dados.
+- **RF05:** O sistema deve permitir que o usuário vizualize apenas as suas própias receitas.
+
+- **RF06:** O sistema deve armazenar as informações de usuários e receitas no banco de dados.
 
 ## Requisitos não funcionais (RNF)
 
