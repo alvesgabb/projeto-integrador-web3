@@ -35,14 +35,14 @@
 
 ## _Quarta Sprint (Unidade IV-)_ 16/03/2026 a 22/03/2026
 
-| Tarefa                            | Story Points | Responsável     | Observações                                  |
-| --------------------------------- | ------------ | --------------- | -------------------------------------------- |
-| Criar frontend-React              | 3            | Clarisse Gondim | ja trabalhar em brench propia                |
-| Configurar React                  | 3            | Gabriela Alves  | ja trabalhar em brench propia                |
-| Atualizar trello                  | 2            | Clarisse Gondim | Atender requisitos do enunciado da atividade |
-| Atualizar Sprints                 | 2            | Gabriela Alves  | Atender requisitos do enunciado da atividade |
-| Criar arquivo APP.jsx             | 5            | Gabriela Alves  | ja trabalhar em brenc                        |
-| Criar Componente                  | 5            | Jose Vianei     | atender requisitos do enunciado da atividade |
-| Criar Componente                  | 5            | Gabriela Alves  | atender requisitos do enunciado da atividade |
-| Criar Componente                  | 5            | Clarisse Gondim | atender requisitos do enunciado da atividade |
-| Atualizar Atas/Branch/estimativas | 3            | Jose Vianei     | atender parametros da reuniao                |
+| Tarefa                                     | Story Points | Responsável     | Observações                                  |
+| ------------------------------------------ | ------------ | --------------- | -------------------------------------------- |
+| Criar a estrutura inicial do novo frontend | 3            | Clarisse Gondim | ja trabalhar em brench                       |
+| Cronstruir ReceitaForm                     | 5            | Clarisse Gondim | Atender requisitos do enunciado da atividade |
+| Atualizar trello                           | 2            | Clarisse Gondim | Atender requisitos do enunciado da atividade |
+| Cronstruir arquivo APP.jsx                 | 5            | Gabriela Alves  | ja trabalhar em brenc                        |
+| Atualizar Sprints                          | 2            | Gabriela Alves  | Atender requisitos do enunciado da atividade |
+| Construir CardReceita.jsx                  | 5            | Gabriela Alves  | atender requisitos do enunciado da atividade |
+| Construir Receitalista                     | 5            | Jose Vianei     | atender requisitos do enunciado da atividade |
+| Atualizar Atas                             | 2            | Jose Vianei     | atender parametros da reunião                |
+| Revisar PR e merge no GitHub               | 2            | Todos           | atender parametros da reuniao                |
