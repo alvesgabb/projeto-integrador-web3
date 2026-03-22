@@ -9,7 +9,7 @@
 | criar/preencher arquivos    | 2            | Gabriele Alves  | Criar a estrutura de pastas                  |
 | Criar a primeira ata        | 3            | Jose Vianei     | evidenciar no trello                         |
 
-## **Segunda Sprint (Unidade I-)** _02/03/2026 a 08/03/2026_
+## **Segunda Sprint (Unidade II-)** _02/03/2026 a 08/03/2026_
 
 | Tarefa                  | Story Points | Responsável     | Observações                                  |
 | ----------------------- | ------------ | --------------- | -------------------------------------------- |
@@ -20,7 +20,7 @@
 | Servidor middleware     | 2            | Jose Vianei     | atender requisitos do enunciado da atividade |
 | Atualizar a ata         | 1            | Jose Vianei     | atender parametros da reuniao                |
 
-## **Terceira Sprint (Unidade II-)** _09/03/2026 a 15/03/2026_
+## **Terceira Sprint (Unidade III-)** _09/03/2026 a 15/03/2026_
 
 | Tarefa                            | Story Points | Responsável     | Observações                                  |
 | --------------------------------- | ------------ | --------------- | -------------------------------------------- |
