@@ -130,3 +130,38 @@ Objetivos: Definir e organizar as primeiras atividades dos membros da equipe den
 - Criação do arquivo " Estimativas.Md.
 - Registro dos historyPoints no Trello.
 - Estimativas de esforço no Planet Poker.
+
+# Atas de Reunião unidade IV
+
+## Reunião 4 - 17/03/2026
+
+### Participantes: Gabriele Alves, José Vianei e Clarisse Gondim.
+
+### Duração: 1h.16 minutos.
+
+## Objetivos: Debater as atividade e ajustar as Githubtarefas da unidade IV, das disciplinas WEB3/Projeto_Integrador_II.
+
+## ## Tópicos discutidos.
+
+- Criar estrutura de pastas e arquivo do frontend -React e configurar.
+- Criar os componentes possíveis.
+- criação do APP.js.
+- Finalizar pendencia do Git/GitHub.
+- Breve discursao do tema "RISCOS".
+- Temas a serem consultados junto ao professor.
+
+## Decisões
+
+- Gabriele Criara app.jsx.
+- Gabriele SPRINTS/REQUIZITOS/STORY-POINTS.
+- Gabriele alterações necessarias Trello.
+- Clarissea lterações necessarias Trello.
+- Clarisse Criação de um componente.
+- Clarisse Criação da estrutura de pastas do frontend-React.
+- Vianei pendencia do Git/GitHub.
+- Vianei Ata da reunião da semana.
+- Vianei Criação de um componente.
+
+## Pendências
+
+Git/GitHub (branch => atualizar-docs-semana3-josevianei) arquivo Diagrama.MD.
