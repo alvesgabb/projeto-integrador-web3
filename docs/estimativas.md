@@ -32,3 +32,17 @@
 | Criar arquivo UI.js               | 5            | Gabriela Alves  | atender requisitos do enunciado da atividade |
 | Criar arquivo API.js              | 5            | Jose Vianei     | atender requisitos do enunciado da atividade |
 | Atualizar arquivos estimativas.md | 1            | Jose Vianei     | atender parametros da reuniao                |
+
+## _Quarta Sprint (Unidade IV-)_ 16/03/2026 a 22/03/2026
+
+| Tarefa                            | Story Points | Responsável     | Observações                                  |
+| --------------------------------- | ------------ | --------------- | -------------------------------------------- |
+| Criar frontend-React              | 3            | Clarisse Gondim | ja trabalhar em brench propia                |
+| Configurar React                  | 3            | Gabriela Alves  | ja trabalhar em brench propia                |
+| Atualizar trello                  | 2            | Clarisse Gondim | Atender requisitos do enunciado da atividade |
+| Atualizar Sprints                 | 2            | Gabriela Alves  | Atender requisitos do enunciado da atividade |
+| Criar arquivo APP.jsx             | 5            | Gabriela Alves  | ja trabalhar em brenc                        |
+| Criar Componente                  | 5            | Jose Vianei     | atender requisitos do enunciado da atividade |
+| Criar Componente                  | 5            | Gabriela Alves  | atender requisitos do enunciado da atividade |
+| Criar Componente                  | 5            | Clarisse Gondim | atender requisitos do enunciado da atividade |
+| Atualizar Atas/Branch/estimativas | 3            | Jose Vianei     | atender parametros da reuniao                |
