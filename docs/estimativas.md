@@ -9,7 +9,7 @@
 | criar/preencher arquivos    | 2            | Gabriele Alves  | Criar a estrutura de pastas                  |
 | Criar a primeira ata        | 3            | Jose Vianei     | evidenciar no trello                         |
 
-## **Segunda Sprint (Unidade I-)** _02/03/2026 a 08/03/2026_
+## **Segunda Sprint (Unidade II-)** _02/03/2026 a 08/03/2026_
 
 | Tarefa                  | Story Points | Responsável     | Observações                                  |
 | ----------------------- | ------------ | --------------- | -------------------------------------------- |
@@ -20,7 +20,7 @@
 | Servidor middleware     | 2            | Jose Vianei     | atender requisitos do enunciado da atividade |
 | Atualizar a ata         | 1            | Jose Vianei     | atender parametros da reuniao                |
 
-## **Terceira Sprint (Unidade II-)** _09/03/2026 a 15/03/2026_
+## **Terceira Sprint (Unidade III-)** _09/03/2026 a 15/03/2026_
 
 | Tarefa                            | Story Points | Responsável     | Observações                                  |
 | --------------------------------- | ------------ | --------------- | -------------------------------------------- |
@@ -36,3 +36,18 @@
 | Criar arquivo API.js              | 5            | Jose Vianei     | atender requisitos do enunciado da atividade |
 | Atualizar arquivos estimativas.md | 1            | Jose Vianei     | atender parametros da reuniao                |
 | Criar diagrama de entidades       | 3            | Jose Vianei     | atender requisitos do enunciado da atividade |
+
+## _Quarta Sprint (Unidade IV-)_ 16/03/2026 a 22/03/2026
+
+| Tarefa                                     | Story Points | Responsável     | Observações                                  |
+| ------------------------------------------ | ------------ | --------------- | -------------------------------------------- |
+| Criar a estrutura inicial do novo frontend | 3            | Clarisse Gondim | ja trabalhar em brench                       |
+| Cronstruir ReceitaForm                     | 5            | Clarisse Gondim | Atender requisitos do enunciado da atividade |
+| Atualizar trello                           | 2            | Clarisse Gondim | Atender requisitos do enunciado da atividade |
+| Cronstruir arquivo APP.jsx                 | 5            | Gabriele Alves  | ja trabalhar em branch                       |
+| Atualizar Sprints                          | 2            | Gabriele Alves  | Atender requisitos do enunciado da atividade |
+| Construir CardReceita.jsx                  | 5            | Gabriele Alves  | atender requisitos do enunciado da atividade |
+| Construir Receitalista                     | 5            | Jose Vianei     | atender requisitos do enunciado da atividade |
+| Atualizar Atas                             | 2            | Jose Vianei     | atender parametros da reunião                |
+| Revisar PR e merge no GitHub               | 2            | Todos           | atender parametros da reuniao                |
+

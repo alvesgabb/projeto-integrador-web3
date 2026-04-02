@@ -55,3 +55,23 @@
 | Criar diagrama de entidades                      | Vianei      | Em andamento |
 
 
+## Sprint 4
+
+**Périodo:** 16/03 - 22/03
+**Objetivo da Sprint:** Recriar o frontend com React.
+
+### Tarefas planejadas
+
+| Tarefa                                           | Responsável | Status       |
+| :----------------------------------------------- | :---------- | :----------- |
+| Criar a estrutura inicial do novo frontend       | Clarisse    | Concluido    |
+| Cronstruir ReceitaForm                           | Clarisse    | Em andamento |
+| Atualizar trello                                 | Clarisse    | Em andamento |
+| Construir App.jsx                                | Gabriele    | Concluido    |
+| Construir CardReceita.jsx                        | Gabriele    | Concluido    |
+| Atualizar Sprints                                | Gabriele    | Em andamento |
+| Atualizar Requisitos                             | Gabriele    | Em andamento |
+| Construir ReceitaLista                           | Vianei      | Em andamento |
+| Atualizar ata                                    | Vianei      | Concluido    |
+| Atualizar estimativas                            | Vianei      | Concluido    |
+| Revisar PR e merge no GitHub                     | Todos       | Em andamento |
