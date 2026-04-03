@@ -1,4 +1,4 @@
-import CardReceita from "./CardReceita";
+import CardReceita from "../../components/CardReceita";
 
 function ReceitaLista({ receitas, onExcluir }) {
 
