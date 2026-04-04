@@ -27,7 +27,7 @@ function ReceitaForm({ onAdicionar}) {
     }
 
     return (
-        <form classNome="form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
             <input
             type="text"
             placeholder="Nome da receita"
