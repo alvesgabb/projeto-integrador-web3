@@ -1,0 +1,11 @@
+.root {
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
