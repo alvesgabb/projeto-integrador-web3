@@ -1,9 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function ReceitaForm({ onAdicionar}) {
     const [nome, setNome] = useState("");
     const [ingredientes, setIngredientes] = useState("");
     const [modo_preparo, setModo_preparo] = useState("");
+
+    const navigate = useNavigate(); 
 
     function handleSubmit(evento) {
         evento.preventDefault();
@@ -24,6 +27,9 @@ function ReceitaForm({ onAdicionar}) {
         setNome("");
         setIngredientes("");
         setModo_preparo("");
+
+        // Redireciona para a lista
+        navigate("/");
     }
 
     return (

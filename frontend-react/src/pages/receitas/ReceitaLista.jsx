@@ -12,16 +12,15 @@ function ReceitaLista({ receitas = [], onExcluir }) {
   }
 
   return (
-    <ul className="lista">
-      {receitas.map((r) => (
-        <li key={r.id} className="item">
-          <CardReceita 
-            receita={r}
-            onExcluir={onExcluir}
+    <div className="grid">
+      {receitas.map((receita) => (
+        <CardReceita
+          key={receita.id} 
+          receita={receita}
+          onExcluir={onExcluir}
           />
-        </li>
       ))}
-    </ul>
+    </div>
   );
 }
 

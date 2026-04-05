@@ -1,29 +1,52 @@
 import { useState } from "react";
+import styles from "./cardReceita.module.css";
 
 function CardReceita({ receita, onExcluir }) {
   const [expandido, setExpandido] = useState(false);
 
   return (
-    <div className="card-receita">
-      <h3>{receita.nome}</h3>
-      
-      {/*Estado para controlar se o conteúdo extra da receita aparece ou não*/}
-      <button onClick={() => setExpandido(!expandido)}>
-        {expandido ? "Ocultar" : "Ver Detalhes"}
-      </button>
+    <div className={styles.card}>
+      <h3 className={styles.titulo}>{receita.nome}</h3>
 
-      <button 
-        className="btn-excluir" 
-        onClick={() => onExcluir(receita.id)}
-      > Excluir</button>
+      <img 
+        src={receita.imagem} 
+        alt={receita.nome} 
+        className={styles.imagem}
+      />
 
-      {/*operador ternário: se expandido for true, renderiza a div; se false, retorna null*/}
-      {expandido ? (
-        <div className="detalhes-preparo">
-          <p><strong>Ingredientes:</strong> {receita.ingredientes}</p>
-          <p><strong>Modo de Preparo:</strong> {receita.modo_preparo}</p>
+      <div className={styles.botoes}>
+        <button 
+          className={styles.btnDetalhes}
+          onClick={() => setExpandido(!expandido)}
+        >
+          {expandido ? "Ocultar" : "Ver Detalhes"}
+        </button>
+
+        <button 
+          className={styles.btnExcluir}
+          onClick={() => onExcluir && onExcluir(receita.id)}
+        >
+          Excluir
+        </button>
+      </div>
+
+      {expandido && (
+        <div className={styles.detalhes}>
+          <h4>Ingredientes:</h4>
+          <ul>
+            {receita.ingredientes.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+          <h4>Modo de Preparo:</h4>
+          <ul>
+            {receita.modo_de_preparo.map((passo, index) => (
+              <li key={index}>{passo}</li>
+            ))}
+          </ul>
         </div>
-      ) : null}
+      )}
     </div>
   );
 }
