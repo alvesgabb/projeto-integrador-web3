@@ -1,59 +1,56 @@
-import { useState } from "react";
-import "./App.css";
-import ReceitaForm from "./components/ReceitaForm.jsx"; 
-import ReceitaLista from "./components/ReceitaLista.jsx"; 
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/NavBar";
+import Footer from "./components/Footer";
 
-function App() {
-  const [receitas, setReceitas] = useState([
-    { 
-      id: "1", 
-      nome: "Bolo de Chocolate", 
-      ingredientes: "Trigo, cacau, ovos", 
-      modo_preparo: "Misture e asse por 40min." 
-    },
-    { 
-      id: "2", 
-      nome: "Salada de Frutas", 
-      ingredientes: "Banana, maçã, uva", 
-      modo_preparo: "Pique e misture com leite condesado." 
-    },
-  ]);
+// Rotas protegidas
+import PrivateRoute from "./auth/PrivateRoute";
 
-  
-  function gerarId() {
-    return typeof crypto !== "undefined" && crypto.randomUUID
-      ? crypto.randomUUID()
-      : String(Date.now() + Math.random());
-  }
+// Páginas principais
+import Home from "./pages/Home";
+import Sobre from "./pages/Sobre";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import NotFound from "./pages/NotFound";
 
-  // Função da Clarisse
-  function adicionarReceita({ nome, ingredientes, modo_preparo }) {
-    const nova = { 
-      id: gerarId(), 
-      nome, 
-      ingredientes, 
-      modo_preparo 
-    };
-    setReceitas((lista) => [...lista, nova]);
-  }
+// Rotas de Receitas 
+import ReceitasLayout from "./pages/receitas/ReceitasLayout";
+import ReceitaLista from "./pages/receitas/ReceitaLista";
+import ReceitaForm from "./pages/receitas/ReceitaForm";
 
-  // Minha função (Gabi)
-  function excluirReceita(id) {
-    setReceitas((lista) => lista.filter((r) => r.id !== id));
-  }
-
+export default function App() {
   return (
-    <main className="container">
-      <h1>Catálogo de Receitas</h1>
+    <>
+      <Navbar />
+      
+      <main className="container">
+        <Routes>
+          {/* Rotas públicas */}
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/login" element={<Login />} />
 
-      <ReceitaForm onAdicionar={adicionarReceita}/>
+          {/* Rota /receitas com rotas aninhadas */}
+          <Route path="/receitas" element={<ReceitasLayout />}>
+            <Route index element={<ReceitaLista />} />
+            <Route path="novo" element={<ReceitaForm />} />
+          </Route>
 
-      <hr />
+          {/* Rota protegida*/}
+          <Route
+            path="/dashboard"
+            element={
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
+            }
+          />
 
-      {/* O Vianei recebe a lista e repassa a função de excluir para o Card*/}
-      <ReceitaLista receitas={receitas} onExcluir={excluirReceita}/>
-    </main>
+          {/* Rota 404 */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+
+      <Footer />
+    </>
   );
-}  
-
-export default App;
+}
