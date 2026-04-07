@@ -1,15 +1,51 @@
-// import { PRODUCTS } from "../mock/productsData.js";
+import { RECEITAS } from "../mock/receitasData.js";
 
-// para o site não abrir vazio
-const DADOS_INICIAIS = []; 
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// exporta a lista vazia
-export const fetchProducts = () => {
-  return []; 
-};
+// 1. Buscar todas as receitas 
+export async function fetchProducts() {
+  await delay(500);
+  return RECEITAS;
+}
 
-// exporta a função de criar (apenas para o formulário não quebrar)
-export const createProduct = (data) => {
-  console.log(data);
-  return {};
-};
+// 2. Buscar uma receita específica pelo ID
+export async function fetchProductById(id) {
+  await delay(500);
+  const found = RECEITAS.find((r) => r.id === id);
+  if (!found) {
+    const err = new Error("Receita não encontrada");
+    err.status = 404;
+    throw err;
+  }
+  return found;
+}
+
+// 3. Cadastrar nova receita 
+export async function createProduct(data) {
+  await delay(500);
+  
+  
+  const novaReceita = {
+    id: Date.now().toString(), 
+    nome: data.nome,
+    ingredientes: data.ingredientes,
+    modo_preparo: data.modo_preparo,
+    data_criacao: new Date().toLocaleDateString(),
+  };
+
+  RECEITAS.push(novaReceita); 
+  return novaReceita;
+}
+
+export async function deleteProduct(id) {
+  await delay(500);
+  
+  const index = RECEITAS.findIndex((r) => r.id.toString() === id.toString());
+
+  if (index !== -1) {
+    RECEITAS.splice(index, 1);
+    return { success: true };
+  }
+
+  throw new Error("Receita não encontrada para deletar");
+}

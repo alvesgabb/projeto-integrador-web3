@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { PRODUCTS } from "./mock/receitasData";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
@@ -20,17 +18,7 @@ import ReceitaLista from "./pages/receitas/ReceitaLista";
 import ReceitaForm from "./pages/receitas/ReceitaForm";
 
 export default function App() {
-  const [receitas, setReceitas] = useState(PRODUCTS);
-
-   function adicionarReceita(novaReceita) {
-    const receitaComId = {
-      ...novaReceita,
-      id: Date.now().toString()
-    };
-
-    setReceitas((prev) => [...prev, receitaComId]);
-  }
-
+  
   return (
     <>
       <Navbar />
