@@ -23,7 +23,6 @@ export default function ProdutosList() {
   if (!produtos) return <p className="card">Carregando as receitas... </p>;
 
   return (
-<<<<<<< HEAD
     <div
       style={{
         display: "grid",
@@ -35,15 +34,6 @@ export default function ProdutosList() {
       {produtos.map((p) => (
         /* Chamamos o Card da Clarisse e passamos os dados e a função */
         <CardReceita key={p.id} receita={p} onExcluir={handleExcluir} />
-=======
-    <div className="grid">
-      {receitas.map((receita) => (
-        <CardReceita
-          key={receita.id} 
-          receita={receita}
-          onExcluir={onExcluir}
-          />
->>>>>>> f8eb31230c99ca09998edc075508b65c9bc9470e
       ))}
     </div>
   );
