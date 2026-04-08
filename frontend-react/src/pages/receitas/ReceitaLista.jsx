@@ -1,27 +1,40 @@
-// esqueleto pronto com o parâmetro receitas = [] para as rotas não quebrarem e a navbar aparecer, po enquanto que não tem a lógica  "
+import { useEffect, useState } from "react";
+import { fetchProducts } from "../../services/api.js";
+import CardReceita from "../../components/CardReceita"; // Importa o componente da Clarisse
 
-//import { useEffect, useState } from "react";
-//import { fetchProducts } from "../../services/api.js"
-import { Link } from "react-router-dom"
-import CardReceita from "../../components/CardReceita";
+export default function ProdutosList() {
+  const [produtos, setProdutos] = useState(null);
+  const [erro, setErro] = useState(null);
 
-function ReceitaLista({ receitas = [], onExcluir }) {
+  useEffect(() => {
+    fetchProducts().then(setProdutos).catch(setErro);
+  }, []);
 
-  if (receitas.length===0) {
-    return <p className="vazio">Nenhuma receita cadastrada ainda.</p>;
-  }
+  // Lógica de excluir
+  const handleExcluir = (id) => {
+    if (window.confirm("Deseja apagar essa receita ? ")) {
+      // Filtra a lista para o card sumir da tela
+      const novaLista = produtos.filter((p) => p.id !== id);
+      setProdutos(novaLista);
+    }
+  };
+
+  if (erro) return <p className="card">Erro ao carregar produtos.</p>;
+  if (!produtos) return <p className="card">Carregando as receitas... </p>;
 
   return (
-    <div className="grid">
-      {receitas.map((receita) => (
-        <CardReceita
-          key={receita.id} 
-          receita={receita}
-          onExcluir={onExcluir}
-          />
+    <div
+      style={{
+        display: "grid",
+        gap: "1.5rem",
+        gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+        padding: "1rem",
+      }}
+    >
+      {produtos.map((p) => (
+        /* Chamamos o Card da Clarisse e passamos os dados e a função */
+        <CardReceita key={p.id} receita={p} onExcluir={handleExcluir} />
       ))}
     </div>
   );
 }
-
-export default ReceitaLista;

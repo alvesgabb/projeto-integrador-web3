@@ -123,3 +123,4 @@ erDiagram
     RECEITA ||--o{ CATEGORIA : "possui"
     USUARIO ||--o{ RECEITA : "cria"
 ```
+
