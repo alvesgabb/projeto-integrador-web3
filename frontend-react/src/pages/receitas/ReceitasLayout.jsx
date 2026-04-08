@@ -8,7 +8,7 @@ export default function ReceitasLayout() {
     <section className="card" style={{ padding: "1.5rem" }}>
       <h1>Receitas Layout</h1>
       <p style={{ color: "var(--text-muted)", marginTop: ".5rem" }}>
-        teste.
+        Explore suas receitas ou registre novas criações culinárias.
       </p>
 
       <div style={{ marginTop: "1rem", display: "flex", gap: ".5rem" }}>
