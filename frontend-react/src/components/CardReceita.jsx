@@ -1,29 +1,34 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
+import styles from "./cardReceita.module.css";
 
 function CardReceita({ receita, onExcluir }) {
-  const [expandido, setExpandido] = useState(false);
-
   return (
-    <div className="card-receita">
-      <h3>{receita.nome}</h3>
-      
-      {/*Estado para controlar se o conteúdo extra da receita aparece ou não*/}
-      <button onClick={() => setExpandido(!expandido)}>
-        {expandido ? "Ocultar" : "Ver Detalhes"}
-      </button>
+    <div className={styles.card}>
+      <h3 className={styles.titulo}>{receita.nome}</h3>
 
-      <button 
-        className="btn-excluir" 
-        onClick={() => onExcluir(receita.id)}
-      > Excluir</button>
+      <img 
+        src={receita.imagem } 
+        alt={receita.nome} 
+        className={styles.imagem}
+      />
 
-      {/*operador ternário: se expandido for true, renderiza a div; se false, retorna null*/}
-      {expandido ? (
-        <div className="detalhes-preparo">
-          <p><strong>Ingredientes:</strong> {receita.ingredientes}</p>
-          <p><strong>Modo de Preparo:</strong> {receita.modo_preparo}</p>
-        </div>
-      ) : null}
+      <div className={styles.botoes}>
+        {/* Navega para a rota de detalhes */}
+        <Link 
+          to={`/receitas/${receita.id}`} 
+          className={styles.btnDetalhes}
+        >
+          Ver Detalhes
+        </Link>
+
+        {/* Aciona a função handleExcluir que o Vianney passou */}
+        <button 
+          className={styles.btnExcluir}
+          onClick={() => onExcluir(receita.id)}
+        >
+          Excluir
+        </button>
+      </div>
     </div>
   );
 }
