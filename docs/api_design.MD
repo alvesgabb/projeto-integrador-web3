@@ -22,7 +22,85 @@ A API do sistema é organizada em torno dos seguintes recursos principais:
 | Auth | POST | /auth/login | Realizar login |
 | Auth | POST | /auth/logout | Fazer logout (sair da conta) |
 
----
+## 3. Estrutura de Requests e Responses (JSON)
+
+📍 **Exemplo de endpoint com sucesso e erro**
+
+**(POST)/receitas**
+
+ **Request Body (JSON):**
+
+```json
+{
+  "nome": "Bolo de chocolate",
+  "ingredientes": [
+    "2 xícaras de farinha de trigo",
+    "3 ovos"
+  ],
+  "modo_de_preparo": [
+    "Tempo de preparo 1h",
+    "1- Massa: Bata os ovos..."
+  ],
+  "usuarioId": 1
+}
+ ```
+
+Resposta de sucesso – 201 Created:
+```json
+{
+  "id": "101",
+  "nome": "Bolo de chocolate",
+  "ingredientes": [
+    "2 xícaras de farinha de trigo",
+    "3 ovos"
+  ],
+  "modo_de_preparo": [
+    "Tempo de preparo 1h",
+    "1- Massa: Bata os ovos..."
+  ],
+  "usuarioId": 1
+}
+
+```
+Resposta de erro – 400 Bad Request:
+```json
+{
+  "error": "VALIDATION_ERROR",
+  "message": "O campo 'nome' é obrigatório e os 'ingredientes' devem ser uma lista."
+}
+```
+
+**(POST)/login**
+
+**Request Body (JSON)**
+
+```json
+{
+  "email": "gabriele.alves@email.com",
+  "senha": "123"
+}
+```
+
+Resposta de sucesso - 200 Created:
+```json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "usuario": {
+    "id": 1,
+    "nome": "Gabriele",
+    "email": "gabriele.alves@email.com"
+  },
+  "mensagem": "Login realizado com sucesso!"
+}
+```
+
+Resposta de erro - 400 Unauthorized:
+```json
+{
+  "error": "AUTH_ERROR",
+  "message": "E-mail ou senha incorretos."
+}
+```
 
 ## 4. Status Codes previstos por rota
 
