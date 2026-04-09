@@ -51,3 +51,26 @@
 | Atualizar Atas                             | 2            | Jose Vianei     | atender parametros da reunião                |
 | Revisar PR e merge no GitHub               | 2            | Todos           | atender parametros da reuniao                |
 
+## **Quinta Sprint (Unidade V-)** _ 30/03/2026 a 05/04/2026_
+
+| Tarefa                                                       | Story Points | Responsável     | Observações                                  |
+| ------------------------------------------------------------ | ------------ | --------------- | -------------------------------------------- |
+| Criação dos receitasData                                     | 5            | Clarisse Gondim | atender requisitos do enunciado da atividade |
+| Melhoria do ReceitaForm                                      | 5            | Clarisse Gondim | atender requisitos do enunciado da atividade |
+| Melhoria e CSS do componente CardReceita                     | 3            | Clarisse Gondim | ja trabalhar em brench propia                |
+| Desenvolvimento da api.jsx                                   | 2            | Clarisse Gondim | Atender requisitos do enunciado da atividade |
+| Criar tabela de endpoints e status codes previstos por rotas | 3            | Clarisse Gondim | Pj egrador                                   |
+| Atualizar trello                                             | 3            | Clarisse Gondim | Pj integrador                                |
+| Oganização de estrutura de pastas                            | 3            | Gabriele Alves  | ja trabalhar em brench propia                |
+| Implementação do React Router                                | 3            | Gabriele Alves  | atender requisitos do enunciado da atividade |
+| Riação do ReceitasLayout, CSS da navbar e footer             | 3            | Gabriele Alves  | atender requisitos do enunciado da atividade |
+| Implementação do React Router e caminhos do sistema          | 3            | Gabriele Alves  | atender requisitos do enunciado da atividade |
+| Criação do ReceitaDetalhes                                   | 5            | Gabriele Alves  | atender requisitos do enunciado da atividade |
+| Criação do componente ScrollToTop                            | 3            | Gabriele Alves  | atender requisitos do enunciado da atividade |
+| Criação de Request e Response (api.design)                   | 2            | Gabriele Alves  | Atender requisitos do enunciado da atividade |
+| Atualizar Sprints                                            | 2            | Gabriele Alves  | Atender requisitos do enunciado da atividade |
+| ReceitaLista.jsx adicionar useState e useEffect.             | 3            | Jose Vianei     | atender requisitos do enunciado da atividade |
+| Atualizar arquivos estimativas.md                            | 1            | Jose Vianei     | atender parametros da reuniao                |
+| Atualizar Ata da reunião da semana 5.                        | 1            | Jose Vianei     | atender parametros da reuniao                |
+| Criar recursos da api (Resources)                            | 3            | Jose Vianei     | atender requisitos do enunciado da atividade |
+| Revisar PR e merge no GitHub                                 | 2            | Todos           |
