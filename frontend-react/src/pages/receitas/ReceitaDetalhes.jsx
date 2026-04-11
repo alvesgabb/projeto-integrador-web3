@@ -56,7 +56,7 @@ export default function ReceitaDetalhes() {
       <div style={{ marginBottom: "2rem" }}>
         <h3 style={{ color: "#8d6e63", marginBottom: ".5rem" }}> Modo de Preparo</h3>
         <p style={{ lineHeight: "1.6", whiteSpace: "pre-line" }}>
-          {receita.modo_preparo}
+          {receita.modo_de_preparo}
         </p>
       </div>
   

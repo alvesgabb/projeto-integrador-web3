@@ -1,6 +1,6 @@
 //Lista fictícia de receitas do sistema de recitas culinárias
 import { imagensPorSabor } from "../assets/imagens/imagens";
-export const PRODUCTS = [
+export const RECEITAS = [
   {
     id: "101",
     nome: "Bolo de chocolate",

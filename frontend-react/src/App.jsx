@@ -35,7 +35,7 @@ export default function App() {
           <Route path = "/receitas" element={<ReceitasLayout />}>
             <Route index element = {<ReceitaLista />} />
             <Route path = "novo" element = {<ReceitaForm />} />
-            <Route path ="id" element = {<ReceitaDetalhes />} />
+            <Route path =":id" element = {<ReceitaDetalhes />} />
 
           </Route>
 
