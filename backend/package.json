@@ -1,31 +1,22 @@
 {
   "name": "projetoweb3",
   "version": "1.0.0",
-  "description": "Desenvolvimento de um sistema web para gerenciamento de receitas culinárias de uso própio, com autenticação de usuários e persistência de dados.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "Desenvolvimento de um sistema web para gerenciamento de receitas culinárias.",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "vite"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alvesgabb/projeto-integrador-web3.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gabriele Alves",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/alvesgabb/projeto-integrador-web3/issues"
-  },
-  "homepage": "https://github.com/alvesgabb/projeto-integrador-web3#readme",
   "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "vite": "^8.0.3"
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
   }
 }
