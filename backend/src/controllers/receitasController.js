@@ -9,7 +9,7 @@ export function listarReceitas(req, res) {
 
 // POST - Criar nova receita
 export function criarReceita(req, res) {
-  const { nome, ingredientes, imagem, modo_de_preparo, usuarioId } = req.body;
+  const { nome, ingredientes, imagem, modo_de_preparo, usuarioId, ativo } = req.body;
 
   if (!nome || !ingredientes || !modo_de_preparo) {
     return res.status(400).json({
