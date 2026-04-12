@@ -1,15 +1,15 @@
-const Base_URL = "http://localhost:300";
+const Base_URL = "http://localhost:3001";
 
 // Lista todas as receitas
-export async function fetchProducts() {
+export async function fetchReceita() {
   const resposta = await fetch(`${Base_URL/receitas}`);
   if (!resposta.ok) throw new error("Erro ao buscar receita");
   return resposta.json();
 }
 
 // Busca uma receita específica
-export async function fetchProductById(id) {
-  const resposta = await fetch(`&{Base_URL}/receitas/&{id}`);
+export async function fetchReceitaId(id) {
+  const resposta = await fetch(`${Base_URL}/receitas/${id}`);
   if (resposta.status === 404) {
     const erro = new Error("Receita não encontrada");
     erro.status = 404;
@@ -20,17 +20,16 @@ export async function fetchProductById(id) {
 }
 
 // Cria uma nova receita
-export async function createProduct(data) {
-  const resposta = await fetch(`&{Base_URL}/receita`, {
+export async function createReceita(data) {
+  const resposta = await fetch(`${Base_URL}/receita`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      id: Number(data.id),
       nome: data.nome,
       imagem: data.imagem,
       ingredientes: data.ingredientes,
       modo_de_preparo: data.modo_de_preparo,
-      ativo: true,
+      usuarioId: data.usuarioId || 1
   }),
 });
 
@@ -38,9 +37,9 @@ export async function createProduct(data) {
   return resposta.json();
 }
 
-// Remove um produto (para futuras exclusões)
-export async function deleteProduct(id) {
-  const resposta = await fetch(`${BASE_URL}/receitas/${id}`, { method: "DELETE" });
+// Remove receita (para futuras exclusões)
+export async function deleteReceita(id) {
+  const resposta = await fetch(`${Base_URL}/receitas/${id}, { method: "DELETE" }`);
   if (!resposta.ok) throw new Error("Erro ao excluir receita");
 }
 

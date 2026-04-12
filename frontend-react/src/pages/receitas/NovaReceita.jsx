@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { createProduct } from "../../services/api.js"; 
-import styles from "./NovoProduto.module.css";
+import { createReceita } from "../../services/api.js"; 
+import styles from "./NovaReceita.module.css";
 
 
 function NovaReceita({ onReceitaCriada }) {
@@ -25,7 +25,7 @@ function NovaReceita({ onReceitaCriada }) {
         setMensagem("");
 
         try {
-            const NovaReceita = await createProduct(formData);
+            const NovaReceita = await createReceita(formData);
       setMensagem("✅ Receita cadastrado com sucesso!");
       setFormData({
         nome: "",
@@ -76,6 +76,7 @@ function NovaReceita({ onReceitaCriada }) {
           <div className={styles.campo}>
             <label htmlFor="ingredientes">Ingredientes</label>
             <input
+              type="text"
               id="ingredientes"
               name="ingredientes"
               value={formData.ingredientes}
@@ -88,7 +89,7 @@ function NovaReceita({ onReceitaCriada }) {
          {/* Modo de preparo */}
           <div className={styles.campo}>
             <label htmlFor="modo_de_preparo">Modo de Preparo</label>
-            <select
+            <textarea
               id="modo_de_preparo"
               name="modo_de_preparo"
               value={formData.modo_de_preparo}
