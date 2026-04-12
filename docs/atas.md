@@ -130,3 +130,76 @@ Objetivos: Definir e organizar as primeiras atividades dos membros da equipe den
 - Criação do arquivo " Estimativas.Md.
 - Registro dos historyPoints no Trello.
 - Estimativas de esforço no Planet Poker.
+
+# Atas de Reunião unidade IV
+
+## Reunião 4 - 17/03/2026
+
+### Participantes: Gabriele Alves, José Vianei e Clarisse Gondim.
+
+### Duração: 1h.16 minutos.
+
+## Objetivos: Debater as atividade e ajustar as Githubtarefas da unidade IV, das disciplinas WEB3/Projeto_Integrador_II.
+
+## ## Tópicos discutidos.
+
+- Criar estrutura de pastas e arquivo do frontend -React e configurar.
+- Criar os componentes possíveis.
+- criação do APP.js.
+- Finalizar pendencia do Git/GitHub.
+- Breve discursao do tema "RISCOS".
+- Temas a serem consultados junto ao professor.
+
+## Decisões
+
+- Gabriele responsável App.jsx.
+- Gabriele Resposável por atualizar Sprints e Requisitos.
+- Gabriele Criação de um componente (CardReceita).
+- Clarissea alterações necessarias Trello.
+- Clarisse Criação de um componente (ReceitaForm).
+- Clarisse Criação da estrutura de pastas do frontend-React.
+- Vianei pendência do Git/GitHub.
+- Vianei Ata da reunião da semana.
+- Vianei Criação de um componente (ReceitaLista).
+
+## Pendências
+
+Git/GitHub (branch => atualizar-docs-semana3-josevianei) arquivo Diagrama.MD.
+
+# Atas de Reunião unidade V
+
+## Reunião 5 - 31/04/2026
+
+### Participantes: Gabriele Alves, José Vianei e Clarisse Gondim.
+
+### Duração: 0h.46 minutos.
+
+## Objetivos: Debater as atividade e ajustar as Github tarefas da unidade V, das disciplinas WEB3/Projeto_Integrador_II.
+
+## ## Tópicos discutidos.
+
+- Criar estrutura de pastas e arquivo do frontend -React e configurar.
+- Criar os componentes possíveis, Adicionar tambem o componente "Scroll Restoration"
+- Criar Estrutura de paginas com uma quantidades minima de paginas.
+- Criar no minimo as paginas;Home, Sobre, Entidades e Nova Entidade.
+- Criar Layout com componentes fixos (Navbar e Footer)
+- Utilizar Navegação declarativa fazendo uso de "useNavigate" e Imperativa fazendo uso de "Link".
+- Finalizar pendencia do Git/GitHub.
+- Breve discursao do tema "RISCOS".
+- .
+
+## Decisões
+
+- Gabriele responsável Oganização de estrutura de pastas .
+- Gabriele Resposável por atualizar Sprints e Requisitos.
+- Gabriele configuração App.jsx, BrouseRouter, routes, Route, Navbar e footer.
+- Clarissea alterações necessarias Trello.
+- Clarisse Criação de uma pagina "sobre.jsx" movimentação de arquivos e utilizar o "useNavigate" (ReceitaForm).
+- Clarisse Criação da dentro de src/mock/receitasData.js.
+- Vianei receitaLista.jsx, adicionar useState e useEffect.
+- Vianei Ata da reunião da semana.
+- Vianei Criação de estilo de grade no css.
+
+## Pendências
+
+novo bugg nas branchs do Vianei, conteudos de arquivos referentes a participação dele enviado via grupo de watsApp. reuniao realizada presencial, na aual de sem evidencias para anexar.

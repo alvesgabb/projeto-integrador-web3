@@ -1,17 +1,16 @@
-# Diagramas 
+# Diagramas
 
 ## Diagrama de fluxo
-
 
 ```text
   [ Usuário ]
        |
        ▼
-  [ Front-End ] 
+  [ Front-End ]
     • Formulários de cadastro e login
     • Botão para cadastrar/ listar receitas
     • Envio de requisição para a API
-    
+
        |
        ▼
   [ Back-End ]
@@ -23,11 +22,10 @@
     • Armazenamento de usuários
     • Armazenamento de receitas de usuários
 
- 
-```  
 
+```
 
-# Diagramas UML do projeto - Sistema de Receitas Culinarias 
+# Diagramas UML do projeto - Sistema de Receitas Culinarias
 
 ## Diagrama de Casos de Uso
 
@@ -42,7 +40,7 @@ flowchart LR
     UC1((Listar receitas))
     UC2((Cadastrar receita))
     UC3((Ver detalhes da receita))
-    
+
     Usuario --> UC1
     Usuario --> UC2
     UC3 -->|<<include>>| UC1
@@ -59,15 +57,15 @@ Neste exemplo, o **Usuario** pode cadastrar receitas, vizualizar receitas cadast
 - **Casos de Uso:** Cadastrar receita, Vizualizar receitas, Ver detalhe da receita
 
 **Relações:**
+
 - "Ver detalhe da receita" `<include>` "Vizualizar receitas"
 
 **Atualizado em:** 15/03/2026 - Equipe 1
 
-
-# Diagrama de sequência 
-
+# Diagrama de sequência
 
 **Descrição:**
+
 ```
 -  Usuário abre o site
 -  Frontend solicita receitas
@@ -79,7 +77,8 @@ Neste exemplo, o **Usuario** pode cadastrar receitas, vizualizar receitas cadast
 ```
 
 # Diagrama:
-````mermaid
+
+```mermaid
 ---
 config:
   theme: dark
@@ -96,7 +95,32 @@ API->>Controller: getAll()
 Controller-->>API: retorna lista de receitas
 API-->>Frontend: JSON com receitas
 Frontend-->>Usuario: Exibe receitas na tela
-````
+```
 
-**Atualizado em:** 15/03/2026 - equipe 1
+## **Atualizado em:** 15/03/2026 - equipe 1
+
+```mermaid
+---
+config:
+  theme: dark
+---
+erDiagram
+    RECEITA {
+        id int PK
+        nome string
+        ingredientes string
+        modo_preparo string
+    }
+    USUARIO {
+        id int PK
+        nome string
+        email string
+    }
+    CATEGORIA {
+        id int PK
+        nome string
+    }
+    RECEITA ||--o{ CATEGORIA : "possui"
+    USUARIO ||--o{ RECEITA : "cria"
+```
 
