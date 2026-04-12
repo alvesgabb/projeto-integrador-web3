@@ -1,0 +1,22 @@
+{
+  "name": "projetoweb3",
+  "version": "1.0.0",
+  "description": "Desenvolvimento de um sistema web para gerenciamento de receitas culinárias.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvesgabb/projeto-integrador-web3.git"
+  },
+  "keywords": [],
+  "author": "Gabriele Alves",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  }
+}
