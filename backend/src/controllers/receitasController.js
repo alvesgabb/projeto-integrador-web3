@@ -24,7 +24,9 @@ export function criarReceita(req, res) {
     imagem: imagem || "https://th.bing.com/th/id/OIP.wNovgchbBdX1gT8vtnj56gHaFj?w=268&h=201&c=7&r=0&o=5&dpr=1.3&pid=1.7",
     ingredientes,
     modo_de_preparo,
-    usuarioId: usuarioId || 1
+    usuarioId: usuarioId || 1,
+    ativo: ativo ?? true, 
+    criadoEm: new Date().toISOString()
   };
 
   receitas.push(novaReceita);
@@ -58,7 +60,7 @@ export function atualizarReceita(req, res) {
     });
   }
 
-  const { nome, imagem, ingredientes, modo_de_preparo } = req.body;
+  const { nome, imagem, ingredientes, modo_de_preparo, ativo } = req.body;
 
   if (!nome && !imagem && !ingredientes && !modo_de_preparo) {
     return res.status(400).json({ 
@@ -71,6 +73,7 @@ export function atualizarReceita(req, res) {
   if (imagem !== undefined) receita.imagem = imagem;
   if (ingredientes !== undefined) receita.ingredientes = ingredientes;
   if (modo_de_preparo !== undefined) receita.modo_de_preparo = modo_de_preparo;
+  if (ativo !== undefined) receita.ativo = ativo;
 
   res.json(receita);
 }

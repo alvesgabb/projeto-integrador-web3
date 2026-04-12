@@ -19,7 +19,9 @@ export let receitas = [
       "2- Despeje a massa em uma tigela e adicione a água quente, o sal e o fermento, misturando bem.",
       "3- Desenforme ainda quente.",
     ],
-     usuarioId: 1
+     usuarioId: 1,
+     ativo : true,
+    criadoEm: new Date().toISOString()
   },
   {
     id: 102,
@@ -42,7 +44,9 @@ export let receitas = [
       "1- Pique todos os ingredientes. Deixe a laranja em pedaços menores que as outras frutas, depois ela solta o caldo e a salada não fica tão ácida.",
       "2- Coloque tudo em um prato fundo e adicione o leite condensado (se quiser), a canela em pó e o gelo, mexa por alguns segundos e leve à geladeira por 30 minutos.",
     ],
-    usuarioId: 2
+    usuarioId: 2,
+    ativo : true,
+    criadoEm: new Date().toISOString()
   },
   {
     id: 103,
@@ -64,7 +68,9 @@ export let receitas = [
       "3- Desligue o fogo e acrescente o creme de leite e o molho de tomate.",
       "4- Incorpore o macarrão refogado na manteiga e misture bem.",
     ],
-    usuarioId: 3
+    usuarioId: 3,
+    ativo : true,
+    criadoEm: new Date().toISOString()
   },
   {
     id: 104,
@@ -97,7 +103,9 @@ export let receitas = [
       "8- Junte a manteiga de garrafa, coloque um pouquinho da água do cozimento do feijão e, por último, adicione coentro e queijo coalho.",
       "9- Acerte o sal e a pimenta e sirva.", 
     ],
-     usuarioId: 4
+     usuarioId: 4,
+     ativo : true,
+    criadoEm: new Date().toISOString()
   },                 
   {
     id: 105,
@@ -123,6 +131,8 @@ export let receitas = [
       "3- Depois de frio, leve para gelar por cerca de 6 horas.",
       "4- Desenforme e sirva a seguir.", 
     ],
-     usuarioId: 5
+     usuarioId: 5,
+     ativo : true,
+    criadoEm: new Date().toISOString()
   },
 ]
