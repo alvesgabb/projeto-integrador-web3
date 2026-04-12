@@ -1,16 +1,19 @@
-// Aqui se faz as importações
-const express = require("express");
-const routes = express.Router();
-const receitasControlles = require("../controllers/receitasController");
+import { Router} from "express"
+    import {
+        listarReceitas,
+        criarReceita,
+        buscarReceita,
+        atualizarReceita,
+        deletarReceita,
+    }  from "../controllers/receitasController.js";
 
+const router = Router();
 
-// GET mostra receita
-routes.get("/", receitasControlles.getAll);
+router.get ("/", listarReceitas);
+router.post ("/", criarReceita);
+router.get ("/:id", buscarReceita);
+router.put ("/:id", atualizarReceita)
+router.delete ("/:id",deletarReceita);
 
-// POST inserir receita
-routes.post("/", receitasControlles.create);
-
-
-module.exports = routes;
-
+export default router;
 
