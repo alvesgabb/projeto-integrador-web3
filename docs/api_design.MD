@@ -17,6 +17,7 @@ A API do sistema é organizada em torno dos seguintes recursos principais:
 | Receita | GET | /receitas | Listar todas as receitas |
 | Receita | GET | /receitas/{id} | Buscar receita por ID |
 | Receita | POST | /receitas | Criar nova receita |
+| Receita | PUT | /receitas/{id} | Atualizar receita existente |
 | Receita | DELETE | /receitas/{id} | Excluir receita |
 | Usuário | POST | /usuarios | Criar usuário |
 | Auth | POST | /auth/login | Realizar login |
@@ -33,6 +34,7 @@ A API do sistema é organizada em torno dos seguintes recursos principais:
 ```json
 {
   "nome": "Bolo de chocolate",
+  "imagem": "https://receitasdamama.pt/wp-content/uploads/2023/07/Bolo-de-Chocolate-1.webp",
   "ingredientes": [
     "2 xícaras de farinha de trigo",
     "3 ovos"
@@ -48,8 +50,9 @@ A API do sistema é organizada em torno dos seguintes recursos principais:
 Resposta de sucesso – 201 Created:
 ```json
 {
-  "id": "101",
+  "id": 101,
   "nome": "Bolo de chocolate",
+  "imagem": "https://receitasdamama.pt/wp-content/uploads/2023/07/Bolo-de-Chocolate-1.webp",
   "ingredientes": [
     "2 xícaras de farinha de trigo",
     "3 ovos"
@@ -94,7 +97,7 @@ Resposta de sucesso - 200 Created:
 }
 ```
 
-Resposta de erro - 400 Unauthorized:
+Resposta de erro - 401 Unauthorized:
 ```json
 {
   "error": "AUTH_ERROR",
@@ -110,6 +113,7 @@ Resposta de erro - 400 Unauthorized:
 | GET /receitas/{id}    | 200 OK      | 404 (receita não encontrada)           |
 | POST /receitas        | 201 Created | 400 (dados inválidos)                  |
 | DELETE /receitas/{id} | 200 OK      | 404 (não encontrada)                   |
+| PUT /receitas/{id}    | 200 OK       | 400 (dados inválidos), ou 404 (não encontrada) |
 | POST /usuarios        | 201 Created | 400 (dados inválidos), 409 (já existe) |
 | POST /auth/login      | 200 OK      | 401 (não autorizado)                   |
 | POST /auth/logout     | 200 OK      | —                                      |
