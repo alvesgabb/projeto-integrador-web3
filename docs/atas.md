@@ -176,7 +176,7 @@ Git/GitHub (branch => atualizar-docs-semana3-josevianei) arquivo Diagrama.MD.
 
 ## Objetivos: Debater as atividade e ajustar as Github tarefas da unidade V, das disciplinas WEB3/Projeto_Integrador_II.
 
-## ## Tópicos discutidos.
+## Tópicos discutidos.
 
 - Criar estrutura de pastas e arquivo do frontend -React e configurar.
 - Criar os componentes possíveis, Adicionar tambem o componente "Scroll Restoration"
@@ -234,18 +234,18 @@ novo bugg nas branchs do Vianei, conteudos de arquivos referentes a participaç�
 - Gabriele Resposável Refatorar "produtos contrrllers.js" "produtos routes.js".
 - Gabriele .Entregar servidor rodando e retornando json nas receitas.
 - Gabriele atualização de sprints.
-- Gabriele projeto integrador II (Listar,Buscar).
+- Gabriele projeto integrador II (DeletarReceita).
 - Clarisse alterações necessarias Trello.
 - Clarisse Captura de dados do cadastro e envio para a função "receita"..
 - Clarisse Criar função receita na api.js fazendo uso do metodo post.
 - Clarisse Entrega do registro sendo criado e tela do backendo atualizando sozinha.
-- Clarisse projeto integrador II (atualizar)
+- Clarisse projeto integrador II (CriarReceita)
 - Vianei Alterar base Url para atualizar servidor..
 - Vianei Ata da reunião da semana.
 - Vianei Criação de estilo de grade no css.
 - Vianei Criação No fontend utilizar o useEffect
 - Vianei Pagina inicial ou lista mostrando receitas que vem do backend
-- Vianei projeto integrador II (Criar,Deletar)
+- Vianei projeto integrador II (ListarReceita)
 
 ## Pendências
 
