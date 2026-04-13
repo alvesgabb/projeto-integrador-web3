@@ -1,25 +1,88 @@
-// esqueleto pronto com o parâmetro receitas = [] para as rotas não quebrarem e a navbar aparecer, po enquanto que não tem a lógica  "
+import { useEffect, useState } from "react";
+import { fetchReceitas, deleteReceita } from "../../services/api";
+import styles from "./ReceitaLista.module.css";
 
-//import { useEffect, useState } from "react";
-//import { fetchProducts } from "../../services/api.js"
-import { Link } from "react-router-dom"
-import CardReceita from "../../components/CardReceita";
+function ReceitaLista() {
+  const [receitas, setReceitas] = useState([]);
+  const [carregando, setCarregando] = useState(true);
+  const [erro, setErro] = useState("");
+  const [mensagem, setMensagem] = useState("");
 
-function ReceitaLista({ receitas = [], onExcluir }) {
+  useEffect(() => {
+    async function carregarReceitas() {
+      try {
+        const dados = await fetchReceitas();
+        setReceitas(dados);
+      } catch (err) {
+        console.error(err);
+        setErro("Erro ao carregar receitas.");
+      } finally {
+        setCarregando(false);
+      }
+    }
+    carregarReceitas();
+  }, []);
 
-  if (receitas.length===0) {
-    return <p className="vazio">Nenhuma receita cadastrada ainda.</p>;
+  async function handleExcluir(id) {
+    if (!window.confirm("Tem certeza que deseja excluir esta receita?")) return;
+
+    try {
+      await deleteReceita(id);
+      setReceitas((prev) => prev.filter((r) => r.id !== id));
+      setMensagem("✅ Receita excluída com sucesso!");
+      setErro("");
+    } catch (err) {
+      console.error(err);
+      setErro("Erro ao excluir receita.");
+      setMensagem("");
+    }
   }
 
+  if (carregando) return <p>Carregando receitas...</p>;
+  if (erro) return <p style={{ color: "red" }}>{erro}</p>;
+
   return (
-    <div className="grid">
-      {receitas.map((receita) => (
-        <CardReceita
-          key={receita.id} 
-          receita={receita}
-          onExcluir={onExcluir}
-          />
-      ))}
+    <div>
+      {mensagem && <p className={styles.mensagem}>{mensagem}</p>}
+
+      {receitas.length === 0 ? (
+        <p>Nenhuma receita cadastrada.</p>
+      ) : (
+        <ul className={styles.listaReceitas}>
+          {receitas.map((receita) => (
+            <li key={receita.id} className={styles.card}>
+              <div className={styles.cardHeader}>
+                <h3>{receita.nome}</h3>
+                <button
+                  onClick={() => handleExcluir(receita.id)}
+                  className={styles.btnExcluir}
+                  title="Excluir receita"
+                >
+                  ✖
+                </button>
+              </div>
+
+              {receita.imagem && (
+                <img
+                  src={receita.imagem}
+                  alt={receita.nome}
+                  className={styles.imagem}
+                />
+              )}
+
+              <p>
+                <strong>Ingredientes:</strong>
+              </p>
+              <p className={styles.texto}>{receita.ingredientes}</p>
+
+              <p>
+                <strong>Modo de Preparo:</strong>
+              </p>
+              <p className={styles.texto}>{receita.modo_de_preparo}</p>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

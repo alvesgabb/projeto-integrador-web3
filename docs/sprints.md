@@ -75,3 +75,31 @@
 | Atualizar ata                                    | Vianei      | Concluido    |
 | Atualizar estimativas                            | Vianei      | Concluido    |
 | Revisar PR e merge no GitHub                     | Todos       | Em andamento |
+
+## Sprint 5
+
+**Périodo:** 30/03 - 08/04
+**Objetivo da Sprint:** Estilização de componentes e navegação com React Router
+
+### Tarefas planejadas
+
+| Tarefa                                           | Responsável | Status       |
+| :----------------------------------------------- | :---------- | :----------- |
+| Criação dos receitasData (dados mocados)         | Clarisse    | Concluido    |
+| Melhoria do ReceitaForm                          | Clarisse    | Concluido    |
+| Melhoria e CSS do componente CardReceita         | Clarisse    | Concluido    |
+| Desenvolvimento da api.jsx                       | Clarisse    | Concluido    |
+| Criar tabela de endpoints e status codes previstos por rotas | Clarisse | Em andamento |
+| Atualizar trello                                 | Clarisse    | Em andamento |
+| Criação da estrutura das pastas, esqueleto dos arquivos e organização de imports | Gabriele    | Concluido    |
+| Implementação do React Router e definição dos caminhos do sistema| Gabriele | Concluido |
+| Criação do ReceitasLayout, CSS da navbar e footer | Gabriele   | concluido |
+| Criação do ReceitaDetalhes                        | Gabriele   | Concluido |
+| Criação do componente ScrollToTop                 | Gabriele   |  Em andamento |
+| Criação de Request e Response (api.design)        | Gabriele   | Em andamento |
+| Atualizar Sprints                                 | Gabriele    | Em andamento |
+| Melhoria do  ReceitaLista                         | Vianei      | Concluido    |
+| Atualizar ata                                     | Vianei      | Concluido    |
+| Criar recursos da api (Resources)                 | Vianei      | Concluido    | 
+| Atualizar estimativas                             | Vianei      | Em andamento |
+| Revisar PR e merge no GitHub                     | Todos        | Em andamento |

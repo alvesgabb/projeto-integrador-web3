@@ -1,10 +1,8 @@
-//Lista fictícia de receitas do sistema de recitas culinárias
-import { imagensPorSabor } from "../assets/imagens/imagens";
-export const RECEITAS = [
+export let receitas = [
   {
-    id: "101",
+    id: 101,
     nome: "Bolo de chocolate",
-    imagem: imagensPorSabor.chocolate,
+    imagem: "https://receitasdamama.pt/wp-content/uploads/2023/07/Bolo-de-Chocolate-1.webp",
     ingredientes: [
       "2 xícaras (chá) de farinha de trigo",
       "3 ovos",
@@ -21,12 +19,14 @@ export const RECEITAS = [
       "2- Despeje a massa em uma tigela e adicione a água quente, o sal e o fermento, misturando bem.",
       "3- Desenforme ainda quente.",
     ],
-    
+     usuarioId: 1,
+     ativo : true,
+    criadoEm: new Date().toISOString()
   },
   {
-    id: "102",
+    id: 102,
     nome: "Salada de frutas",
-    imagem: imagensPorSabor.salada_frutas,
+    imagem: "https://s2.glbimg.com/qNoqnLY60nOI9QJtZ_kCxI0s800=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/q/A/W2sd6KR1iuDzpRlbsmXw/salada-de-frutas.jpg",
     ingredientes: [
       "2 mamões papaia pequenos",
       "5 bananas",
@@ -44,11 +44,14 @@ export const RECEITAS = [
       "1- Pique todos os ingredientes. Deixe a laranja em pedaços menores que as outras frutas, depois ela solta o caldo e a salada não fica tão ácida.",
       "2- Coloque tudo em um prato fundo e adicione o leite condensado (se quiser), a canela em pó e o gelo, mexa por alguns segundos e leve à geladeira por 30 minutos.",
     ],
+    usuarioId: 2,
+    ativo : true,
+    criadoEm: new Date().toISOString()
   },
   {
-    id: "103",
+    id: 103,
     nome: "Macarronada",
-    imagem: imagensPorSabor.macarronada,
+    imagem: "https://tse1.mm.bing.net/th/id/OIP.nSN7QAXcPJ-1AO0hGp5wkgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
     ingredientes: [
       "carne moída a gosto",
       "1 lata de milho verde",
@@ -65,11 +68,14 @@ export const RECEITAS = [
       "3- Desligue o fogo e acrescente o creme de leite e o molho de tomate.",
       "4- Incorpore o macarrão refogado na manteiga e misture bem.",
     ],
+    usuarioId: 3,
+    ativo : true,
+    criadoEm: new Date().toISOString()
   },
   {
-    id: "104",
+    id: 104,
     nome: "Baião de dois",
-    imagem: imagensPorSabor.baião,
+    imagem: "https://th.bing.com/th/id/R.c15a27052436f43159094bbb0b66a9f6?rik=swKnMpzMj0r1UA&riu=http%3a%2f%2fwww.praiasdenatal.com.br%2fwp-content%2fuploads%2f2014%2f08%2fBai%c3%a3o-de-dois.jpg%3f381fd3&ehk=G4FUbxadPdVpO1rm5UfP7MPUBhhaPzTvW%2fRr0Ax8VW0%3d&risl=&pid=ImgRaw&r=0",
     ingredientes: [
       "2 xícaras de feijão de corda cozido (reservar a água)",
       "1 colher de sopa de cebola desidratada",
@@ -97,11 +103,14 @@ export const RECEITAS = [
       "8- Junte a manteiga de garrafa, coloque um pouquinho da água do cozimento do feijão e, por último, adicione coentro e queijo coalho.",
       "9- Acerte o sal e a pimenta e sirva.", 
     ],
+     usuarioId: 4,
+     ativo : true,
+    criadoEm: new Date().toISOString()
   },                 
   {
-    id: "105",
+    id: 105,
     nome: "Pudim de leite",
-    imagem: imagensPorSabor.pudim,
+    imagem: "https://receitadaboa.com.br/wp-content/uploads/2024/10/pudim-com-leite-condensado.jpg",
     ingredientes: [
       "1 xícara (chá) de açúcar",
       "1 lata de leite condensado",
@@ -122,9 +131,8 @@ export const RECEITAS = [
       "3- Depois de frio, leve para gelar por cerca de 6 horas.",
       "4- Desenforme e sirva a seguir.", 
     ],
+     usuarioId: 5,
+     ativo : true,
+    criadoEm: new Date().toISOString()
   },
 ]
-// Função de busca por ID (usada nas rotas dinâmicas)
-export function findProductById(id) {
-  return PRODUCTS.find((p) => p.id === id) || null;
-}
