@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchReceitas, deleteReceita } from "../../services/api";
+import { fetchReceita, deleteReceita } from "../../services/api";
 import styles from "./ReceitaLista.module.css";
 
 function ReceitaLista() {
@@ -11,7 +11,7 @@ function ReceitaLista() {
   useEffect(() => {
     async function carregarReceitas() {
       try {
-        const dados = await fetchReceitas();
+        const dados = await fetchReceita();
         setReceitas(dados);
       } catch (err) {
         console.error(err);

@@ -16,7 +16,6 @@ import NotFound from "./pages/NotFound";
 import ReceitasLayout from "./pages/receitas/ReceitasLayout";
 import ReceitaLista from "./pages/receitas/ReceitaLista";
 import ReceitaDetalhes from "./pages/receitas/ReceitaDetalhes";
-import ReceitaForm from "./pages/receitas/NovaReceita";
 import NovaReceita from "./pages/receitas/NovaReceita";
 
 export default function App() {
