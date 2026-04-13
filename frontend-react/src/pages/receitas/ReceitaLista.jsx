@@ -1,40 +1,90 @@
 import { useEffect, useState } from "react";
-import { fetchProducts } from "../../services/api.js";
-import CardReceita from "../../components/CardReceita"; // Importa o componente da Clarisse
+import { fetchReceitas, deleteReceita } from "../../services/api";
+import styles from "./ReceitaLista.module.css";
 
-export default function ProdutosList() {
-  const [produtos, setProdutos] = useState(null);
-  const [erro, setErro] = useState(null);
+function ReceitaLista() {
+  const [receitas, setReceitas] = useState([]);
+  const [carregando, setCarregando] = useState(true);
+  const [erro, setErro] = useState("");
+  const [mensagem, setMensagem] = useState("");
 
   useEffect(() => {
-    fetchProducts().then(setProdutos).catch(setErro);
+    async function carregarReceitas() {
+      try {
+        const dados = await fetchReceitas();
+        setReceitas(dados);
+      } catch (err) {
+        console.error(err);
+        setErro("Erro ao carregar receitas.");
+      } finally {
+        setCarregando(false);
+      }
+    }
+    carregarReceitas();
   }, []);
 
-  // Lógica de excluir
-  const handleExcluir = (id) => {
-    if (window.confirm("Deseja apagar essa receita ? ")) {
-      // Filtra a lista para o card sumir da tela
-      const novaLista = produtos.filter((p) => p.id !== id);
-      setProdutos(novaLista);
-    }
-  };
+  async function handleExcluir(id) {
+    if (!window.confirm("Tem certeza que deseja excluir esta receita?")) return;
 
-  if (erro) return <p className="card">Erro ao carregar produtos.</p>;
-  if (!produtos) return <p className="card">Carregando as receitas... </p>;
+    try {
+      await deleteReceita(id);
+      setReceitas((prev) => prev.filter((r) => r.id !== id));
+      setMensagem("✅ Receita excluída com sucesso!");
+      setErro("");
+    } catch (err) {
+      console.error(err);
+      setErro("Erro ao excluir receita.");
+      setMensagem("");
+    }
+  }
+
+  if (carregando) return <p>Carregando receitas...</p>;
+  if (erro) return <p style={{ color: "red" }}>{erro}</p>;
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gap: "1.5rem",
-        gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
-        padding: "1rem",
-      }}
-    >
-      {produtos.map((p) => (
-        /* Chamamos o Card da Clarisse e passamos os dados e a função */
-        <CardReceita key={p.id} receita={p} onExcluir={handleExcluir} />
-      ))}
+    <div>
+      {mensagem && <p className={styles.mensagem}>{mensagem}</p>}
+
+      {receitas.length === 0 ? (
+        <p>Nenhuma receita cadastrada.</p>
+      ) : (
+        <ul className={styles.listaReceitas}>
+          {receitas.map((receita) => (
+            <li key={receita.id} className={styles.card}>
+              <div className={styles.cardHeader}>
+                <h3>{receita.nome}</h3>
+                <button
+                  onClick={() => handleExcluir(receita.id)}
+                  className={styles.btnExcluir}
+                  title="Excluir receita"
+                >
+                  ✖
+                </button>
+              </div>
+
+              {receita.imagem && (
+                <img
+                  src={receita.imagem}
+                  alt={receita.nome}
+                  className={styles.imagem}
+                />
+              )}
+
+              <p>
+                <strong>Ingredientes:</strong>
+              </p>
+              <p className={styles.texto}>{receita.ingredientes}</p>
+
+              <p>
+                <strong>Modo de Preparo:</strong>
+              </p>
+              <p className={styles.texto}>{receita.modo_de_preparo}</p>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
+
+export default ReceitaLista;

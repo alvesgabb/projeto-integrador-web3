@@ -6,23 +6,16 @@ function CardReceita({ receita, onExcluir }) {
     <div className={styles.card}>
       <h3 className={styles.titulo}>{receita.nome}</h3>
 
-      <img 
-        src={receita.imagem } 
-        alt={receita.nome} 
-        className={styles.imagem}
-      />
+      <img src={receita.imagem} alt={receita.nome} className={styles.imagem} />
 
       <div className={styles.botoes}>
         {/* Navega para a rota de detalhes */}
-        <Link 
-          to={`/receitas/${receita.id}`} 
-          className={styles.btnDetalhes}
-        >
+        <Link to={`/receitas/${receita.id}`} className={styles.btnDetalhes}>
           Ver Detalhes
         </Link>
 
         {/* Aciona a função handleExcluir que o Vianney passou */}
-        <button 
+        <button
           className={styles.btnExcluir}
           onClick={() => onExcluir(receita.id)}
         >
