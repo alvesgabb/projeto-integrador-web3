@@ -10,7 +10,7 @@ export default function ReceitaDetalhes() {
   useEffect(() => {
     setReceita(null);
     setErro(null);
-    fetchReceitasId(id).then(setReceita).catch(setErro);
+    fetchReceitaId(id).then(setReceita).catch(setErro);
   }, [id]);
 
  
