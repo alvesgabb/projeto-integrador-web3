@@ -2,7 +2,7 @@ const Base_URL = "http://localhost:3001";
 
 // Lista todas as receitas
 export async function fetchReceita() {
-  const resposta = await fetch(`${Base_URL/receitas}`);
+  const resposta = await fetch(`${Base_URL}/receitas`);
   if (!resposta.ok) throw new error("Erro ao buscar receita");
   return resposta.json();
 }
@@ -21,7 +21,7 @@ export async function fetchReceitaId(id) {
 
 // Cria uma nova receita
 export async function createReceita(data) {
-  const resposta = await fetch(`${Base_URL}/receita`, {
+  const resposta = await fetch(`${Base_URL}/receitas`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -39,7 +39,7 @@ export async function createReceita(data) {
 
 // Remove receita (para futuras exclusões)
 export async function deleteReceita(id) {
-  const resposta = await fetch(`${Base_URL}/receitas/${id}, { method: "DELETE" }`);
+  const resposta = await fetch(`${Base_URL}/receitas/${id}`, { method: "DELETE" });
   if (!resposta.ok) throw new Error("Erro ao excluir receita");
 }
 
