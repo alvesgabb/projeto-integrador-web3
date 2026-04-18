@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchReceita, deleteReceita } from "../../services/api";
+import CardReceita from "../../components/CardReceita";
 import styles from "./ReceitaLista.module.css";
 
 function ReceitaLista() {
@@ -14,7 +15,6 @@ function ReceitaLista() {
         const dados = await fetchReceita();
         setReceitas(dados);
       } catch (err) {
-        console.error(err);
         setErro("Erro ao carregar receitas.");
       } finally {
         setCarregando(false);
@@ -30,58 +30,30 @@ function ReceitaLista() {
       await deleteReceita(id);
       setReceitas((prev) => prev.filter((r) => r.id !== id));
       setMensagem("✅ Receita excluída com sucesso!");
-      setErro("");
     } catch (err) {
-      console.error(err);
       setErro("Erro ao excluir receita.");
-      setMensagem("");
     }
   }
 
-  if (carregando) return <p>Carregando receitas...</p>;
-  if (erro) return <p style={{ color: "red" }}>{erro}</p>;
+  if (carregando) return <p className={styles.aviso}>Carregando receitas...</p>;
+  if (erro) return <p className={styles.erro}>{erro}</p>;
 
   return (
-    <div>
+    <div className={styles.container}>
       {mensagem && <p className={styles.mensagem}>{mensagem}</p>}
 
       {receitas.length === 0 ? (
         <p>Nenhuma receita cadastrada.</p>
       ) : (
-        <ul className={styles.listaReceitas}>
+        <div className={styles.grid}>
           {receitas.map((receita) => (
-            <li key={receita.id} className={styles.card}>
-              <div className={styles.cardHeader}>
-                <h3>{receita.nome}</h3>
-                <button
-                  onClick={() => handleExcluir(receita.id)}
-                  className={styles.btnExcluir}
-                  title="Excluir receita"
-                >
-                  ✖
-                </button>
-              </div>
-
-              {receita.imagem && (
-                <img
-                  src={receita.imagem}
-                  alt={receita.nome}
-                  className={styles.imagem}
-                />
-              )}
-
-              <p>
-                <strong>Ingredientes:</strong>
-              </p>
-              <p className={styles.texto}>{receita.ingredientes}</p>
-
-              <p>
-                <strong>Modo de Preparo:</strong>
-              </p>
-              <p className={styles.texto}>{receita.modo_de_preparo}</p>
-            </li>
+            <CardReceita
+              key={receita.id}
+              receita={receita}
+              onExcluir={handleExcluir}
+            />
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
