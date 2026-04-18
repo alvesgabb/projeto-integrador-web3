@@ -9,24 +9,28 @@ export function listarReceitas(req, res) {
 
 // POST - Criar nova receita
 export function criarReceita(req, res) {
-  const { nome, ingredientes, imagem, modo_de_preparo, usuarioId, ativo } = req.body;
+  const { nome, ingredientes, imagem, modo_de_preparo, usuarioId, ativo } =
+    req.body;
 
   if (!nome || !ingredientes || !modo_de_preparo) {
     return res.status(400).json({
       error: "VALIDATION_ERROR",
-      message: "O campo 'nome' é obrigatório e os 'ingredientes' devem ser uma lista."
+      message:
+        "O campo 'nome' é obrigatório e os 'ingredientes' devem ser uma lista.",
     });
   }
 
   const novaReceita = {
     id: contadorId++,
     nome: nome.trim(),
-    imagem: imagem || "https://th.bing.com/th/id/OIP.wNovgchbBdX1gT8vtnj56gHaFj?w=268&h=201&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    imagem:
+      imagem ||
+      "https://th.bing.com/th/id/OIP.wNovgchbBdX1gT8vtnj56gHaFj?w=268&h=201&c=7&r=0&o=5&dpr=1.3&pid=1.7",
     ingredientes,
     modo_de_preparo,
     usuarioId: usuarioId || 1,
-    ativo: ativo ?? true, 
-    criadoEm: new Date().toISOString()
+    ativo: ativo ?? true,
+    criadoEm: new Date().toISOString(),
   };
 
   receitas.push(novaReceita);
@@ -34,7 +38,7 @@ export function criarReceita(req, res) {
   return res.status(201).json(novaReceita);
 }
 
-// GET por id 
+// GET por id
 export function buscarReceita(req, res) {
   const id = Number(req.params.id);
   const receita = receitas.find((r) => r.id === id);
@@ -42,7 +46,7 @@ export function buscarReceita(req, res) {
   if (!receita) {
     return res.status(404).json({
       error: "NOT_FOUND",
-      message: "Receita não encontrada."
+      message: "Receita não encontrada.",
     });
   }
   res.json(receita);
@@ -56,16 +60,17 @@ export function atualizarReceita(req, res) {
   if (!receita) {
     return res.status(404).json({
       error: "NOT_FOUND",
-      message: "Receita não encontrada."
+      message: "Receita não encontrada.",
     });
   }
 
   const { nome, imagem, ingredientes, modo_de_preparo, ativo } = req.body;
 
   if (!nome && !imagem && !ingredientes && !modo_de_preparo) {
-    return res.status(400).json({ 
+    return res.status(400).json({
       error: "VALIDATION_ERROR",
-      message: "O campo 'nome' é obrigatório e os 'ingredientes' devem ser uma lista." 
+      message:
+        "O campo 'nome' é obrigatório e os 'ingredientes' devem ser uma lista.",
     });
   }
 
@@ -86,7 +91,7 @@ export function deletarReceita(req, res) {
   if (index === -1) {
     return res.status(404).json({
       error: "NOT_FOUND",
-      message: "Receita não encontrada."
+      message: "Receita não encontrada.",
     });
   }
 
