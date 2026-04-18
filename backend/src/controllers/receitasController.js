@@ -4,6 +4,7 @@ import { receitas } from "../data/receitas.js";
 
 // Importações diretas dos arquivos separados
 import { criarReceitaCore } from "../core/criarReceitaCore.js";
+import { buscarReceitaCore } from "../core/buscarReceitaCore.js";
 import { atualizarReceitaCore } from "../core/atualizarReceitaCore.js";
 import { deletarReceitaCore } from "../core/deletarReceitaCore.js";
 
@@ -30,6 +31,20 @@ export function criarReceita(req, res) {
 
   } catch (erro) {
     res.status(400).json({ erro: erro.message });
+  }
+}
+
+//buscar receita por ID
+export function buscarReceita(req,res) {
+  try{
+    const id = Number (req.params.id)
+
+    const receita = buscarReceitaCore(receitas,id);
+
+    res.json(receita);
+
+  } catch (erro) {
+    res.status(404).json({erro: erro.message})
   }
 }
 
