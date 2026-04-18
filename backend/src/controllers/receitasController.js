@@ -35,7 +35,7 @@ export function criarReceita(req, res) {
 }
 
 //buscar receita por ID
-export function buscarReceitaCore(req,res) {
+export function buscarReceita(req,res) {
   try{
     const id = Number (req.params.id)
 
