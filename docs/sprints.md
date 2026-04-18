@@ -103,3 +103,33 @@
 | Criar recursos da api (Resources)                 | Vianei      | Concluido    | 
 | Atualizar estimativas                             | Vianei      | Em andamento |
 | Revisar PR e merge no GitHub                     | Todos        | Em andamento |
+
+## Sprint 6
+
+**Périodo:** 06/03 - 12/04
+**Objetivo da Sprint:** Implementar a integração do front-end React com o back-end desenvolvido anteriormente e implementação de testes unitários.
+### Tarefas planejadas
+
+| Tarefa                                           | Responsável | Status       |
+| :----------------------------------------------- | :---------- | :----------- |
+| Refatoração do arquivo ReceitaForm.jsx, agora (NovaReceita)    | Clarisse    | Concluido    |
+| Criação do arquivo NovaReceita.module.css        | Clarisse    | Concluido    |
+| Atualizar trello                                 | Clarisse    | Concluido    |
+| Criar deletarReceitaCore.teste.js e teste unitário | Clarisse  | Concluido    | 
+| Refatorar Controllers (Separar Core de Controllers) | Clarisse   | Concluido  | 
+| Tabela de Endpoints e Status Codes previstos por rotas | Clarisse | Concluido |
+| Construir App.jsx                                | Gabriele    | Concluido    |
+| Reestruturação da pasta src e criação do app.js  | Gabriele    | Concluido    |
+| Criar errorHandler                               | Gabriele    | Concluido    |
+| Ajustar receitasRoutes.js e server.js            | Gabriele    | Concluido    |
+| Copiar dados mocados do front pro back           | Gabriele    | Concluido    |
+| Buscar, atualizar e deletar no receitasController.js| Gabriele | Concluido    |
+| Criar deletarReceitaCore.teste.js e teste unitário | Gabriele  | Concluido    | 
+| Estrutura de Requests e Responses (JSON)           | Gabriele  | Concluido    |
+| Refatorar ReceitaLista.jsx                       | Vianei      | Concluido    |
+| Criar arquivo Receitalista.module.css            | Vianei      | Concluido    |
+| Atualizar ata                                    | Vianei      | Concluido    |
+| Atualizar estimativas                            | Vianei      | Em andamento |
+| Recursos da API (Resources)                      | Vianei      | Concluido    |
+| Criar atualizarReceitasCore.test.js e teste unitário  | Vianei      | Em andamento |
+| Revisar PR e merge no GitHub                          | Todos       | Em andamento |
