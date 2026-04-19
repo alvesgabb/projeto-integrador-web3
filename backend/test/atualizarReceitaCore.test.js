@@ -1,4 +1,4 @@
-import { atualizarReceitaCore } from "../core/atualizarReceitaCore.js";
+import { atualizarReceitaCore } from "../src/core/atualizarReceitaCore.js";
 
 describe("atualizarReceitaCore", () => {
   let receitas;
@@ -32,11 +32,13 @@ describe("atualizarReceitaCore", () => {
     expect(atualizada.ingredientes).toEqual(["Farinha de Trigo", "Açúcar"]);
   });
 
-  test("deve atualizar modo_de_preparo para string vazia se vier undefined", () => {
+  test("deve manter modo_de_preparo antigo se vier undefined", () => {
     const atualizada = atualizarReceitaCore(receitas, 1, {
+      nome: "Bolo Novo", // manda um campo válido
       modo_de_preparo: undefined,
     });
-    expect(atualizada.modo_de_preparo).toBe("Misture tudo"); // não alterou porque era undefined
+    expect(atualizada.modo_de_preparo).toBe("Misture tudo"); // não alterou
+    expect(atualizada.nome).toBe("Bolo Novo"); // esse sim alterou
   });
 
   test("deve atualizar o campo ativo para false", () => {
