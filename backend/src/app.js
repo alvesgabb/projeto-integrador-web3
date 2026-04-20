@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import receitasRoutes from "./routes/receitasRoutes.js";
+import usuariosRoutes from "./routes/usuariosRoutes.js"
 import { errorHandler } from "./middlewares/errorHandler.js";
 
 const app = express();
@@ -13,6 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/receitas", receitasRoutes);
+app.use("/usuarios",usuariosRoutes);
 
 //app.use(errorHandler)
 
