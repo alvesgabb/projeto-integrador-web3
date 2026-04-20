@@ -1,14 +1,26 @@
+// src/controllers/receitas.controller.js
+
 import { receitas } from "../data/receitas.js";
+
+// Importações diretas dos arquivos separados
+import { criarReceitaCore } from "../core/criarReceitaCore.js";
+import { listarReceitasCore } from "../core/listarReceitaCore.js";
+import { buscarReceitaCore } from "../core/buscarReceitaCore.js";
+import { atualizarReceitaCore } from "../core/atualizarReceitaCore.js";
+import { deletarReceitaCore } from "../core/deletarReceitaCore.js";
+
 let contadorId = receitas.length + 1;
 
-// GET - Listar todas
-export function listarReceitas(req, res) {
-  console.log("GET /receitas -> retornando lista");
-  return res.status(200).json(receitas);
+
+//listar receita
+export function listarReceitas(req,res) {
+  const lista = listaReceitasCore(receitas)
+  res.json(lista);
 }
 
-// POST - Criar nova receita
+// Criar receita
 export function criarReceita(req, res) {
+<<<<<<< HEAD
   const { nome, ingredientes, imagem, modo_de_preparo, usuarioId, ativo } =
     req.body;
 
@@ -48,15 +60,50 @@ export function buscarReceita(req, res) {
       error: "NOT_FOUND",
       message: "Receita não encontrada.",
     });
+=======
+  try {
+    // 1) Aplica regra de negócio
+    const dadosReceita = criarReceitaCore(req.body);
+
+    // 2) Controller adiciona dados específicos do HTTP/sistema
+    const novaReceita = {
+      id: contadorId++,
+      ...dadosReceita,
+      criadoEm: new Date().toISOString()
+    };
+
+    // 3) Persistência da "base" em memória
+    receitas.push(novaReceita);
+
+    // 4) Resposta HTTP
+    res.status(201).json(novaReceita);
+
+  } catch (erro) {
+    res.status(400).json({ erro: erro.message });
   }
-  res.json(receita);
 }
 
-// PUT - Atualizar
-export function atualizarReceita(req, res) {
-  const id = Number(req.params.id);
-  const receita = receitas.find((r) => r.id === id);
+//buscar receita por ID
+export function buscarReceita(req,res) {
+  try{
+    const id = Number (req.params.id)
 
+    const receita = buscarReceitaCore(receitas,id);
+
+    res.json(receita);
+
+  } catch (erro) {
+    res.status(404).json({erro: erro.message})
+>>>>>>> 99ad9fa05512db150c9f8a9ee60b98c810236fd0
+  }
+}
+
+// Atualizar receita
+export function atualizarReceita(req, res) {
+  try {
+    const id = Number(req.params.id);
+
+<<<<<<< HEAD
   if (!receita) {
     return res.status(404).json({
       error: "NOT_FOUND",
@@ -81,13 +128,23 @@ export function atualizarReceita(req, res) {
   if (ativo !== undefined) receita.ativo = ativo;
 
   res.json(receita);
+=======
+    const receitaAtualizada = atualizarReceitaCore(receitas, id, req.body);
+
+    res.json(receitaAtualizada);
+
+  } catch (erro) {
+    res.status(404).json({ erro: erro.message });
+  }
+>>>>>>> 99ad9fa05512db150c9f8a9ee60b98c810236fd0
 }
 
-// DELETE por id
+// Deletar receita
 export function deletarReceita(req, res) {
-  const id = Number(req.params.id);
-  const index = receitas.findIndex((r) => r.id === id);
+  try {
+    const id = Number(req.params.id);
 
+<<<<<<< HEAD
   if (index === -1) {
     return res.status(404).json({
       error: "NOT_FOUND",
@@ -98,3 +155,13 @@ export function deletarReceita(req, res) {
   receitas.splice(index, 1);
   res.status(200).json({ message: "Receita excluída com sucesso" });
 }
+=======
+    deletarReceitaCore(receitas, id);
+
+    res.status(204).send();
+
+  } catch (erro) {
+    res.status(404).json({ erro: erro.message });
+  }
+}
+>>>>>>> 99ad9fa05512db150c9f8a9ee60b98c810236fd0

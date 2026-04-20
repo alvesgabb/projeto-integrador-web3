@@ -5,7 +5,12 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
+<<<<<<< HEAD
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+=======
+  "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+  "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
+>>>>>>> 99ad9fa05512db150c9f8a9ee60b98c810236fd0
   },
   "repository": {
     "type": "git",
