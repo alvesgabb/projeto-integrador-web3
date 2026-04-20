@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import receitasRoutes from "./routes/receitasRoutes.js";
-import usuariosRoutes from "./routes/usuariosRoutes.js"
+import usuariosRoutes from "./routes/usuariosRoutes.js";
 import { errorHandler } from "./middlewares/errorHandler.js";
 
 const app = express();

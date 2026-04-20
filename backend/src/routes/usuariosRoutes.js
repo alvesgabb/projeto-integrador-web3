@@ -4,7 +4,7 @@ import { Router } from "express"
         criarUsuario,
         listarUsuario
 
-    } from "../controllers/usuariosController";
+    } from "../controllers/usuariosController.js";
 
 const router = Router ();
 
