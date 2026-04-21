@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/receitas", receitasRoutes);
-app.use("/usuarios",usuariosRoutes);
+app.use("/usuarios", usuariosRoutes);
 
 //app.use(errorHandler)
 
