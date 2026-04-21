@@ -4,7 +4,7 @@ import { receitas } from "../data/receitas.js";
 
 // Importações diretas dos arquivos separados
 import { criarReceitaCore } from "../core/criarReceitaCore.js";
-import { listarReceitasCore } from "../core/listarReceitaCore.js";
+import { listarReceitaCore } from "../core/listarReceitaCore.js";
 import { buscarReceitaCore } from "../core/buscarReceitaCore.js";
 import { atualizarReceitaCore } from "../core/atualizarReceitaCore.js";
 import { deletarReceitaCore } from "../core/deletarReceitaCore.js";
