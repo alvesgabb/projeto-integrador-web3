@@ -16,7 +16,7 @@ export function buscarReceitaPorId(id) {
 export function criarReceita(nome, imagem, ingredientes, modo_de_preparo, usuarioId, ativo) {
   const stmt = db.prepare(`
     INSERT INTO receitas (nome, imagem, ingredientes, modo_de_preparo, usuarioId, ativo)
-    VALUES (?, ?, ?, ?, ?)
+    VALUES (?, ?, ?, ?, ?, ?)
   `);
 
   const result = stmt.run(nome, imagem, ingredientes, modo_de_preparo, usuarioId, ativo);
