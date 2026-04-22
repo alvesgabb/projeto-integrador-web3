@@ -10,7 +10,7 @@ export function listarReceitas(req,res) {
 
 // Criar receita
 export function criarReceita(req, res) {
-  const {nome, imagem, ingredientes, modo_de_preparo, ativo} = req.body;
+  const {nome, imagem, ingredientes, modo_de_preparo, usuarioId, ativo} = req.body;
 
   if (!nome || !ingredientes || !modo_de_preparo) {
     return res.status(400).json({erro: "Campos obrigatórios: nome, ingredientes e modo de preparo",});
@@ -21,6 +21,7 @@ export function criarReceita(req, res) {
     imagem ?? "",
     ingredientes,
     modo_de_preparo,
+    usuarioId ?? null,
     ativo ?? 1);
 
     res.status(201).json(novaReceita);
@@ -51,7 +52,7 @@ export function atualizarReceita(req, res) {
     if (!receitaExistente) {
       return res.status(404).json({erro: "Receita não encontrada"});
     }
-    const {nome, imagem, ingredientes, modo_de_preparo, ativo} = req.body;
+    const {nome, imagem, ingredientes, modo_de_preparo, usuarioId, ativo} = req.body;
 
     receitaModel.atualizarReceita(
       id,
@@ -59,6 +60,7 @@ export function atualizarReceita(req, res) {
       imagem ?? receitaExistente.imagem,
       ingredientes ?? receitaExistente.ingredientes,
       modo_de_preparo ?? receitaExistente.modo_de_preparo,
+      usuarioId ?? receitaExistente.usuarioId,
       ativo ?? receitaExistente.ativo
     );
 
