@@ -1,3 +1,3 @@
-export function listarReceitasCore (listaReceitas) {
+export function listarReceitaCore (listaReceitas) {
     return [...listaReceitas];
 }

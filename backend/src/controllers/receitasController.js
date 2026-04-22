@@ -4,7 +4,7 @@ import { receitas } from "../data/receitas.js";
 
 // Importações diretas dos arquivos separados
 import { criarReceitaCore } from "../core/criarReceitaCore.js";
-import { listarReceitasCore } from "../core/listarReceitaCore.js";
+import { listarReceitaCore } from "../core/listarReceitaCore.js";
 import { buscarReceitaCore } from "../core/buscarReceitaCore.js";
 import { atualizarReceitaCore } from "../core/atualizarReceitaCore.js";
 import { deletarReceitaCore } from "../core/deletarReceitaCore.js";
@@ -13,8 +13,8 @@ let contadorId = receitas.length + 1;
 
 
 //listar receita
-export function listarReceitas(req,res) {
-  const lista = listaReceitasCore(receitas)
+export function listarReceita(req,res) {
+  const lista = listarReceitaCore(receitas)
   res.json(lista);
 }
 
