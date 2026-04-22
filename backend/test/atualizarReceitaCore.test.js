@@ -1,4 +1,5 @@
 // tests/atualizarReceitaCore.test.js
+
 import { atualizarReceitaCore } from "../src/core/atualizarReceitaCore.js";
 
 describe("atualizarReceitaCore", () => {
