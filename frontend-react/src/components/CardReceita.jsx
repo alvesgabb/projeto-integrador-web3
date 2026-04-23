@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./cardReceita.module.css";
 
-function CardReceita({ receita, onExcluir }) {
+function CardReceita({ receita, onExcluir, onEditar}) {
   return (
     <div className={styles.card}>
       <h3 className={styles.titulo}>{receita.nome}</h3>
@@ -20,6 +20,13 @@ function CardReceita({ receita, onExcluir }) {
           onClick={() => onExcluir(receita.id)}
         >
           Excluir
+        </button>
+
+        <button
+          className={styles.btnEditar}
+          onClick={() => onEditar(receita)}
+        >
+          Atualizar
         </button>
       </div>
     </div>

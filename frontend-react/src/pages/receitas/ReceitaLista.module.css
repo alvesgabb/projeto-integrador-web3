@@ -74,3 +74,17 @@
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
 }
+
+.btnEditar {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btnEditar:hover {
+  background-color: #43a047;
+}

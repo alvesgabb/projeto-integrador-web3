@@ -25,7 +25,15 @@ function NovaReceita({ onReceitaCriada }) {
         setMensagem("");
 
         try {
-            const NovaReceita = await createReceita(formData);
+          const dadosFormatados = {
+  ...formData,
+  ingredientes: formData.ingredientes
+    .split(",")
+    .map((i) => i.trim()),
+};
+
+ const novaReceita = await createReceita(dadosFormatados);
+
       setMensagem("✅ Receita cadastrado com sucesso!");
       setFormData({
         nome: "",
@@ -81,7 +89,6 @@ function NovaReceita({ onReceitaCriada }) {
               name="ingredientes"
               value={formData.ingredientes}
               onChange={handleChange}
-              rows="4"
               required
             />
           </div>
@@ -112,4 +119,3 @@ function NovaReceita({ onReceitaCriada }) {
 }
 
 export default NovaReceita;
-
