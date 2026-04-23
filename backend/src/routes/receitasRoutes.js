@@ -1,6 +1,6 @@
 import { Router} from "express"
     import {
-        listarReceitas,
+        listarReceita,
         criarReceita,
         buscarReceita,
         atualizarReceita,
@@ -9,7 +9,7 @@ import { Router} from "express"
 
 const router = Router();
 
-router.get ("/", listarReceitas);
+router.get ("/", listarReceita);
 router.post ("/", criarReceita);
 router.get ("/:id", buscarReceita);
 router.put ("/:id", atualizarReceita)
