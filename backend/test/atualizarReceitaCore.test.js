@@ -12,7 +12,7 @@ describe("atualizarReceitaCore", () => {
         nome: "Bolo",
         imagem: "bolo.jpg",
         ingredientes: "farinha, ovos",
-        modoPreparo: "misturar tudo",
+        modo_de_preparo: "misturar tudo",
         usuarioId: 1,
         ativo: true,
       },
@@ -40,9 +40,9 @@ describe("atualizarReceitaCore", () => {
 
   test("atualiza modo de preparo", () => {
     const receita = atualizarReceitaCore(lista, 1, {
-      modoPreparo: "misturar e assar",
+      modo_de_preparo: "misturar e assar",
     });
-    expect(receita.modoPreparo).toBe("misturar e assar");
+    expect(receita.modo_de_preparo).toBe("misturar e assar");
   });
 
   test("atualiza usuarioId", () => {
