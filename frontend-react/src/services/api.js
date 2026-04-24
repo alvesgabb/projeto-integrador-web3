@@ -1,51 +1,62 @@
-import { RECEITAS } from "../mock/receitasData.js";
+const Base_URL = "http://localhost:3001";
 
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-// 1. Buscar todas as receitas 
-export async function fetchProducts() {
-  await delay(500);
-  return RECEITAS;
+// Lista todas as receitas
+export async function fetchReceita() {
+  const resposta = await fetch(`${Base_URL}/receitas`);
+  if (!resposta.ok) throw new error("Erro ao buscar receita");
+  return resposta.json();
 }
 
-// 2. Buscar uma receita específica pelo ID
-export async function fetchProductById(id) {
-  await delay(500);
-  const found = RECEITAS.find((r) => r.id === id);
-  if (!found) {
-    const err = new Error("Receita não encontrada");
-    err.status = 404;
-    throw err;
+// Busca uma receita específica
+export async function fetchReceitaId(id) {
+  const resposta = await fetch(`${Base_URL}/receitas/${id}`);
+  if (resposta.status === 404) {
+    const erro = new Error("Receita não encontrada");
+    erro.status = 404;
+    throw erro;
   }
-  return found;
+  if (!resposta.ok) throw new Error("Erro ao buscar receita");
+  return resposta.json();
 }
 
-// 3. Cadastrar nova receita 
-export async function createProduct(data) {
-  await delay(500);
-  
-  
-  const novaReceita = {
-    id: Date.now().toString(), 
-    nome: data.nome,
-    ingredientes: data.ingredientes,
-    modo_preparo: data.modo_preparo,
-    data_criacao: new Date().toLocaleDateString(),
-  };
+// Cria uma nova receita
+export async function createReceita(data) {
+  const resposta = await fetch(`${Base_URL}/receitas`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      nome: data.nome,
+      imagem: data.imagem,
+      ingredientes: data.ingredientes,
+      modo_de_preparo: data.modo_de_preparo,
+      usuarioId: data.usuarioId || 1
+  }),
+});
 
-  RECEITAS.push(novaReceita); 
-  return novaReceita;
+ if (!resposta.ok) throw new Error("Erro ao criar receita");
+  return resposta.json();
 }
 
-export async function deleteProduct(id) {
-  await delay(500);
-  
-  const index = RECEITAS.findIndex((r) => r.id.toString() === id.toString());
+// Remove receita (para futuras exclusões)
+export async function deleteReceita(id) {
+  const resposta = await fetch(`${Base_URL}/receitas/${id}`, { method: "DELETE" });
+  if (!resposta.ok) throw new Error("Erro ao excluir receita");
+}
 
-  if (index !== -1) {
-    RECEITAS.splice(index, 1);
-    return { success: true };
-  }
+// Atualiza uma receita
+export async function updateReceita(id, data) {
+  const resposta = await fetch(`${Base_URL}/receitas/${id}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      nome: data.nome,
+      imagem: data.imagem,
+      ingredientes: data.ingredientes,
+      modo_de_preparo: data.modo_de_preparo,
+      usuarioId: data.usuarioId || 1
+    }),
+  });
 
-  throw new Error("Receita não encontrada para deletar");
+  if (!resposta.ok) throw new Error("Erro ao atualizar receita");
+  return resposta.json();
 }

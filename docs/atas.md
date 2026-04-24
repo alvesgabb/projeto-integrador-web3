@@ -176,7 +176,7 @@ Git/GitHub (branch => atualizar-docs-semana3-josevianei) arquivo Diagrama.MD.
 
 ## Objetivos: Debater as atividade e ajustar as Github tarefas da unidade V, das disciplinas WEB3/Projeto_Integrador_II.
 
-## ## Tópicos discutidos.
+## Tópicos discutidos.
 
 - Criar estrutura de pastas e arquivo do frontend -React e configurar.
 - Criar os componentes possíveis, Adicionar tambem o componente "Scroll Restoration"
@@ -203,3 +203,50 @@ Git/GitHub (branch => atualizar-docs-semana3-josevianei) arquivo Diagrama.MD.
 ## Pendências
 
 novo bugg nas branchs do Vianei, conteudos de arquivos referentes a participação dele enviado via grupo de watsApp. reuniao realizada presencial, na aual de sem evidencias para anexar.
+
+# Atas de Reunião unidade VI
+
+## Reunião 6 - 09/04/2026
+
+### Participantes: Gabriele Alves, José Vianei e Clarisse Gondim.
+
+### Duração: 0h.46 minutos.
+
+## Objetivos: Debater as atividade e ajustar as Github tarefas da unidade VI, das disciplinas WEB3/Projeto_Integrador_II.
+
+## ## Tópicos discutidos.
+
+- Refatorar estrutura de pastas e arquivo do frontend-React e do backend.
+- Refatorar "produtos contrrllers.js" "produtos routes.js"
+- Entregar servidor rodando e retornando json nas receitas.
+- Alterar base Url para atualizar servidor.
+- No fontend utilizar o useEffect
+- Pagina inicial ou lista mostrando receitas que vem do backend
+- Criar função receita na api.js fazendo uso do metodo post.
+- Captura de dados do cadastro e envio para a função "receita".
+- Finalizar pendencia do Git/GitHub.
+- Breve discursao do tema "RISCOS".
+- Entrega do registro sendo criado e tela do backendo atualizando sozinha.
+
+## Decisões
+
+- Gabriele responsável Refatorar estrutura de pastas e arquivo do frontend-React e do backend. .
+- Gabriele Resposável Refatorar "produtos contrrllers.js" "produtos routes.js".
+- Gabriele .Entregar servidor rodando e retornando json nas receitas.
+- Gabriele atualização de sprints.
+- Gabriele projeto integrador II (DeletarReceita).
+- Clarisse alterações necessarias Trello.
+- Clarisse Captura de dados do cadastro e envio para a função "receita"..
+- Clarisse Criar função receita na api.js fazendo uso do metodo post.
+- Clarisse Entrega do registro sendo criado e tela do backendo atualizando sozinha.
+- Clarisse projeto integrador II (CriarReceita)
+- Vianei Alterar base Url para atualizar servidor..
+- Vianei Ata da reunião da semana.
+- Vianei Criação de estilo de grade no css.
+- Vianei Criação No fontend utilizar o useEffect
+- Vianei Pagina inicial ou lista mostrando receitas que vem do backend
+- Vianei projeto integrador II (ListarReceita)
+
+## Pendências
+
+- DOCS- Frações do Pj Integrador

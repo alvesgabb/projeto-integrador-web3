@@ -16,7 +16,7 @@ import NotFound from "./pages/NotFound";
 import ReceitasLayout from "./pages/receitas/ReceitasLayout";
 import ReceitaLista from "./pages/receitas/ReceitaLista";
 import ReceitaDetalhes from "./pages/receitas/ReceitaDetalhes";
-import ReceitaForm from "./pages/receitas/ReceitaForm";
+import NovaReceita from "./pages/receitas/NovaReceita";
 
 export default function App() {
   
@@ -34,7 +34,8 @@ export default function App() {
           {/* Rota /receitas com rotas aninhadas */}
           <Route path = "/receitas" element={<ReceitasLayout />}>
             <Route index element = {<ReceitaLista />} />
-            <Route path = "novo" element = {<ReceitaForm />} />
+            <Route path = "novo" element = {<NovaReceita />} />
+              <Route path="editar/:id" element={<NovaReceita />}/>
             <Route path =":id" element = {<ReceitaDetalhes />} />
 
           </Route>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchProductById } from "../../services/api.js";
+import { fetchReceitaId } from "../../services/api.js";
 import { useParams, Link } from "react-router-dom";
 
 export default function ReceitaDetalhes() {
@@ -10,7 +10,7 @@ export default function ReceitaDetalhes() {
   useEffect(() => {
     setReceita(null);
     setErro(null);
-    fetchProductById(id).then(setReceita).catch(setErro);
+    fetchReceitaId(id).then(setReceita).catch(setErro);
   }, [id]);
 
  
