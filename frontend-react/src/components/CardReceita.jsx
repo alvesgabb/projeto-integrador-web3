@@ -14,6 +14,13 @@ function CardReceita({ receita, onExcluir }) {
           Ver Detalhes
         </Link>
 
+         
+        {/* editar */}
+        <Link to={`/receitas/editar/${receita.id}`} className={styles.btnEditar}>
+          Editar
+        </Link>
+
+
         {/* Aciona a função handleExcluir que o Vianney passou */}
         <button
           className={styles.btnExcluir}
