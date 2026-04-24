@@ -6,10 +6,8 @@ import './index.css'
 import { ScrollToTop } from './components/ScrollToTop'
 
 createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <BrowserRouter>
     <ScrollToTop/>
       <App />
     </BrowserRouter>
-  </React.StrictMode>
-)
+);
