@@ -17,7 +17,7 @@ function NovaReceita() {
   const [mensagem, setMensagem] = useState("");
   const [erro, setErro] = useState("");
 
-  // Efeito para carregar dados se for edição
+ 
   useEffect(() => {
     if (id) {
       async function carregarDados() {
@@ -66,6 +66,9 @@ function NovaReceita() {
     <section className={styles.container}>
       <h2>{id ? "Editar Receita" : "Cadastrar Nova Receita"}</h2>
 
+     
+     {/* Nome da Receita */}
+
       <form onSubmit={handleSubmit} className={styles.formulario}>
         <div className={styles.campo}>
           <label htmlFor="nome">Nome da Receita</label>
@@ -79,6 +82,8 @@ function NovaReceita() {
           />
         </div>
 
+         {/* Imagem */}
+
         <div className={styles.campo}>
           <label htmlFor="imagem">URL da Imagem</label>
           <input
@@ -91,6 +96,9 @@ function NovaReceita() {
           />
         </div>
 
+
+           {/* Ingredientes */}
+
         <div className={styles.campo}>
           <label htmlFor="ingredientes">Ingredientes</label>
           <input
@@ -102,6 +110,8 @@ function NovaReceita() {
             required
           />
         </div>
+
+          {/* Modo de preparo */}
 
         <div className={styles.campo}>
           <label htmlFor="modo_de_preparo">Modo de Preparo</label>
