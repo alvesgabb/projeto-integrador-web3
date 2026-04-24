@@ -17,6 +17,7 @@ import ReceitasLayout from "./pages/receitas/ReceitasLayout";
 import ReceitaLista from "./pages/receitas/ReceitaLista";
 import ReceitaDetalhes from "./pages/receitas/ReceitaDetalhes";
 import NovaReceita from "./pages/receitas/NovaReceita";
+import EditarReceita from "./pages/receitas/EditarReceita";
 
 export default function App() {
   
@@ -36,6 +37,7 @@ export default function App() {
             <Route index element = {<ReceitaLista />} />
             <Route path = "novo" element = {<NovaReceita />} />
             <Route path =":id" element = {<ReceitaDetalhes />} />
+             <Route path="editar/:id" element={<EditarReceita />} />
 
           </Route>
 

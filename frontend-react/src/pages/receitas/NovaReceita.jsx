@@ -19,19 +19,17 @@ function NovaReceita({ onReceitaCriada }) {
     setFormData((prev) => ({ ...prev, [name]: value}))
   }
 
-    async function handleSubmit(e) {
-        e.preventDefault();
-        setErro("");
-        setMensagem("");
-
-        try {
-          const dadosFormatados = {
-  ...formData,
-  ingredientes: formData.ingredientes
-    .split(",")
-    .map((i) => i.trim()),
-};
-
+    async function handleSubmit(e) { 
+      e.preventDefault(); 
+      setErro(""); setMensagem(""); 
+      
+      try { 
+        const dadosFormatados = { 
+          ...formData, 
+          ingredientes: formData.ingredientes 
+          .split(",") 
+          .map((i) => i.trim()), };
+          
  const novaReceita = await createReceita(dadosFormatados);
 
       setMensagem("✅ Receita cadastrado com sucesso!");

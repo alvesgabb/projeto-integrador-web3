@@ -22,12 +22,11 @@ function CardReceita({ receita, onExcluir, onEditar}) {
           Excluir
         </button>
 
-        <button
+        <Link to={`/receitas/editar/${receita.id}`}
           className={styles.btnEditar}
-          onClick={() => onEditar(receita)}
         >
           Atualizar
-        </button>
+        </Link>
       </div>
     </div>
   );
