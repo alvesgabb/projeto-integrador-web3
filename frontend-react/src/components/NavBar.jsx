@@ -1,20 +1,25 @@
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import styles from "./NavBar.module.css";
-import { useAuth } from "../auth/AuthProvider";
+
 
 export default function Navbar() {
-  const { isAuthenticated, logout } = useAuth();
   const navigate = useNavigate();
+
+  // Criamos essas duas variáveis aqui dentro para substituir o useAuth
+
+  const isAuthenticated = true; 
+  const logout = () => navigate("/login");
 
   return (
     <header className={styles.root}>
       <div className={styles.inner}>
-        {/* Marca / Logo adaptada */}
+       
         <Link to="/" className={styles.brand}>
-          Logo 
+          Sistema de receitas 
         </Link>
 
-        {/* Links de navegação*/}
+        {/* Links de navegação */}
+
         <nav className={styles.links}>
           <NavLink
             to="/"
@@ -43,7 +48,7 @@ export default function Navbar() {
           </NavLink>
         </nav>
 
-        {/* Área do usuário*/}
+        {/* Área do usuário */}
         <div className={styles.actions}>
           {isAuthenticated ? (
             <>
