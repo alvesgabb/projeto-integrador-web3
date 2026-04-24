@@ -43,3 +43,20 @@ export async function deleteReceita(id) {
   if (!resposta.ok) throw new Error("Erro ao excluir receita");
 }
 
+// Atualiza uma receita
+export async function updateReceita(id, data) {
+  const resposta = await fetch(`${Base_URL}/receitas/${id}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      nome: data.nome,
+      imagem: data.imagem,
+      ingredientes: data.ingredientes,
+      modo_de_preparo: data.modo_de_preparo,
+      usuarioId: data.usuarioId || 1
+    }),
+  });
+
+  if (!resposta.ok) throw new Error("Erro ao atualizar receita");
+  return resposta.json();
+}
