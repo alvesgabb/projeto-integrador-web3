@@ -18,11 +18,11 @@ db.prepare(
     nome TEXT NOT NULL,
     imagem TEXT,
     ingredientes TEXT NOT NULL,
-    modo_preparo TEXT NOT NULL,
-    usuario_id INTEGER NOT NULL,
+    modo_de_preparo TEXT NOT NULL,
+    usuarioId INTEGER NOT NULL,
     ativo INTEGER NOT NULL DEFAULT 1,
-    criado_em TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+    criadoEm TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuarioId) REFERENCES usuarios(id)
   )
 `,
 ).run();
