@@ -7,12 +7,12 @@ export function atualizarReceitaCore(listaReceitas, id, data) {
     throw new Error("Receita não encontrada");
   }
 
-  const { nome, imagem, ingredientes, modoPreparo, usuarioId, ativo } = data;
+  const { nome, imagem, ingredientes, modo_de_prearo, usuarioId, ativo } = data;
 
   if (nome !== undefined) receita.nome = nome.trim();
   if (imagem !== undefined) receita.imagem = imagem.trim();
   if (ingredientes !== undefined) receita.ingredientes = ingredientes;
-  if (modoPreparo !== undefined) receita.modoPreparo = modoPreparo;
+  if (modo_de_prearo !== undefined) receita.modo_de_prearo = modo_de_prearo;
   if (usuarioId !== undefined) receita.usuarioId = usuarioId;
   if (ativo !== undefined) receita.ativo = ativo;
 
