@@ -2,8 +2,8 @@ import * as receitaModel from "../models/receitaModel.js";
 
 
 //listar receita
-export function listarReceitas(req,res) {
-  const receitas = receitaModel.listarReceitas();
+export function listarReceita(req,res) {
+  const receitas = receitaModel.listarReceita();
   res.json(receitas);
 }
 

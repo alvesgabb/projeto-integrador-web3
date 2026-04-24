@@ -1,7 +1,7 @@
 import db from '../database/database.js';
 
 // listar todas as receitas
-export function listarReceitas() {
+export function listarReceita() {
   const stmt = db.prepare('SELECT * FROM receitas');
   return stmt.all();
 }
