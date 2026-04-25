@@ -137,7 +137,7 @@
 
 ## Sprint 7 
 
-**Périodo:** 13/04 - 19/04
+**Périodo:** 13/04 - 25/04
 **Objetivo da Sprint:** Implementar modelagem do banco de dados, criptografia com bcrypt e organizar a documentação final.
 ### Tarefas planejadas
 
