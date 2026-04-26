@@ -29,7 +29,7 @@
 | Criar rota de listar receita                     | Gabriele    | Em andamento |
 | Atualizar sprints                                | Gabriele    | Concluido    |
 | Criar servidor e middleware                      | Vianei      | Em andamento |
-| Atualizar ata                                    | Vianei      | Concluido    |
+| Atualizar atas                                   | Vianei      | Concluido    |
 
 
 ## Sprint 3
@@ -49,7 +49,7 @@
 | Atualizar sprints                                | Gabriele    | Em andamento |
 | Criar riscos.md                                  | Gabriele    | Concluido    |
 | Criar diagrama de caso de uso                    | Gabriele    | Em andamento |
-| Atualizar ata                                    | Vianei      | Concluido    |
+| Atualizar atas                                   | Vianei      | Concluido    |
 | Criar estimativas.md                             | Vianei      | Concluido    |
 | Construir api.js                                 | Vianei      | Concluido    |
 | Criar diagrama de entidades                      | Vianei      | Em andamento |
@@ -72,7 +72,7 @@
 | Atualizar Sprints                                | Gabriele    | Em andamento |
 | Atualizar Requisitos                             | Gabriele    | Em andamento |
 | Construir ReceitaLista                           | Vianei      | Em andamento |
-| Atualizar ata                                    | Vianei      | Concluido    |
+| Atualizar atas                                   | Vianei      | Concluido    |
 | Atualizar estimativas                            | Vianei      | Concluido    |
 | Revisar PR e merge no GitHub                     | Todos       | Em andamento |
 
@@ -99,14 +99,14 @@
 | Criação de Request e Response (api.design)        | Gabriele   | Em andamento |
 | Atualizar Sprints                                 | Gabriele    | Em andamento |
 | Melhoria do  ReceitaLista                         | Vianei      | Concluido    |
-| Atualizar ata                                     | Vianei      | Concluido    |
+| Atualizar atas                                    | Vianei      | Concluido    |
 | Criar recursos da api (Resources)                 | Vianei      | Concluido    | 
 | Atualizar estimativas                             | Vianei      | Em andamento |
 | Revisar PR e merge no GitHub                     | Todos        | Em andamento |
 
 ## Sprint 6
 
-**Périodo:** 06/03 - 12/04
+**Périodo:** 06/04 - 12/04
 **Objetivo da Sprint:** Implementar a integração do front-end React com o back-end desenvolvido anteriormente e implementação de testes unitários.
 ### Tarefas planejadas
 
@@ -128,8 +128,28 @@
 | Estrutura de Requests e Responses (JSON)           | Gabriele  | Concluido    |
 | Refatorar ReceitaLista.jsx                       | Vianei      | Concluido    |
 | Criar arquivo Receitalista.module.css            | Vianei      | Concluido    |
-| Atualizar ata                                    | Vianei      | Concluido    |
-| Atualizar estimativas                            | Vianei      | Em andamento |
+| Atualizar atas                                   | Vianei      | Concluido    |
+| Atualizar estimativas.md                         | Vianei      | Em andamento |
 | Recursos da API (Resources)                      | Vianei      | Concluido    |
 | Criar atualizarReceitasCore.test.js e teste unitário  | Vianei      | Em andamento |
 | Revisar PR e merge no GitHub                          | Todos       | Em andamento |
+
+
+## Sprint 7 
+
+**Périodo:** 13/04 - 25/04
+**Objetivo da Sprint:** Implementar modelagem do banco de dados, criptografia com bcrypt e organizar a documentação final.
+### Tarefas planejadas
+
+| Tarefa                                           | Responsável | Status       |
+| :----------------------------------------------- | :---------- | :----------- |
+| Implementar ReceitaModel.js e usuarioModel.js    | Clarisse    | Concluido    |
+| Atualizar documentações (Diagramas, testes e Readme) | Clarisse| Em andamento |
+| Atualizar Trello                                 | Clarisse    | Em andamento |
+| Refatoração do receitasController                | Gabriele    | Concluido    | 
+| Criar rotas de usuarios (usuariosRoutes.js) e implementar (usuarioController.js) | Gabriele | Concluido |
+| Atualizar documentações (sprints e api_design)   | Gabriele      | Em andamento |
+| Criar o arquivo documentacaofinal.md             | Gabriele    | Em andamento |
+| Criar o arquivo de inicialização (init.js).      | Vianei      | Concluido    |
+| Criar o arquivo database.js                      | Vianei      | Concluido    |
+| Atualizar documentações (Atas, Estimativas, e criar pasta docs)| Vianei | Em andamento |
