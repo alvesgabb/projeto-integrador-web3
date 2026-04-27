@@ -168,7 +168,7 @@ Git/GitHub (branch => atualizar-docs-semana3-josevianei) arquivo Diagrama.MD.
 
 # Atas de Reunião unidade V
 
-## Reunião 5 - 31/04/2026
+## Reunião 5 - 31/03/2026
 
 ### Participantes: Gabriele Alves, José Vianei e Clarisse Gondim.
 
@@ -250,3 +250,57 @@ novo bugg nas branchs do Vianei, conteudos de arquivos referentes a participaç�
 ## Pendências
 
 - DOCS- Frações do Pj Integrador
+
+# Atas de Reunião - Unidades 7 e 8 Unificadas
+
+## Reunião 7, 8, 9 e 10 - periodo 13/04/2026 a 24/04/2026
+
+### Datas, 15/04/2026(presencial em sala de aula) 19/04/2026 22/04/2026 24/04/2026.
+
+### Participantes: Gabriele Alves, José Vianei e Clarisse Gondim.
+
+### Duração: 1h20, 1h15, 0h42, 0h19 e 1h02minutos.
+
+## Objetivos: Consolidar entrega final do Projeto Integrador II e Desenvolvimento Web III, implementar banco SQLite com segurança, refatorar backend, criar testes Jest e organizar documentação final para apresentação.
+
+## ##Tópicos discutidos
+
+### ## Desenvolvimento Web III - Unidades 7 e 8
+
+- Banco de Dados e Segurança: Criação da pasta database/. Conexão com SQLite usando better-sqlite3. Arquivo de inicialização init.js para criar tabelas.
+- Modelagem do Banco: Criadas tabelas usuarios e receitas. Remoção completa dos arquivos mockados src/data/receitas.js.
+- Refatoração da Aplicação: Criada pasta models/ com usuarioModel.js e receitaModel.js implementando CRUD. Controllers refatorados para usar models, sem manipular arrays.
+- Criptografia e Login: Implementado bcrypt para hash de senha. Criada rota de login.
+- Testes de API: Validação das rotas usando Thunder Client/Postman.
+- Organização Scrum + Trello + GitHub: Planejamento no Trello atualizado. Controle de versionamento com commits por funcionalidade.
+
+### ## Projeto Integrador II - Unidades 7 e 8
+
+- Refatoração Backend: Separação da regra de negócio em camada core/. Controllers passaram a orquestrar chamadas apenas.
+- Testes Unitários com Jest: Criação obrigatória de testes em src/test/, incluindo criarReceitaCore.test.js. Definido comando npm test para execução.
+- Documentação Final: - Baixado modelo .md e mantida estrutura. Preenchimento com prints atualizados do sistema real em /docs/img/. Arquivo final: /docs/documentacao-final.md.
+- Revisão Final do Projeto:
+- Verificação de funcionalidades, código e documentação. Ajustes finais antes da apresentação.
+- Preparação da Apresentação:
+- Ajustes finais de apresentação.
+- Organização quanto a ordem dos membros da equipe e conteudo individual, a ser utilizado na demonstração de funcionalidades e destaque dos aprendizados com metodologias aplicadas.
+- Feedback e Considerações Finais: Discussão de melhorias e reflexão sobre boas práticas do processo de desenvolvimento.
+
+# Decisões:
+
+- Clarisse Implementar receitaModel.js e usuarioModel.js,
+- Clarisse Atualizar documentações: Diagramas, testes e Readme
+- Clarisse Atualizar Trello
+- Gabriele Refatoração do receitasController.js
+- Gabriele Criar rotas usuariosRoutes.js e implementar usuarioController.js
+- Gabriele Atualizar documentações: sprints e api_design
+- Gabriele Criar arquivo documentacaofinal.md
+- Vianei Criar arquivo de inicialização init.js
+- Vianei Criar arquivo database.js
+- Vianei Atualizar documentações: Atas, Estimativas, e criar arquivo Doc/imagens
+
+### pendencias: considerar como finalizadas apos a entrega:
+
+- Finalizar seções "em andamento" da documentação: Readme, sprints, api_design, Atas e Estimativas.Adicionar prints atualizados do sistema em /docs/img/ para Manual do Usuário.
+- Garantir que todos os testes Jest estejam descritos no documentacao-final.md com instrução npm test.
+- Revisão de código antes da entrega.

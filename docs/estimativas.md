@@ -74,3 +74,41 @@
 | Atualizar Ata da reunião da semana 5.                        | 1            | Jose Vianei     | atender parametros da reuniao                |
 | Criar recursos da api (Resources)                            | 3            | Jose Vianei     | atender requisitos do enunciado da atividade |
 | Revisar PR e merge no GitHub                                 | 2            | Todos           |
+
+## **Sexta Sprint (Unidade VI-)** _ 06/04/2026 a 12/04/2026_
+
+| Tarefa                                                 | Story Points | Responsável | Observações                       |
+| ------------------------------------------------------ | ------------ | ----------- | --------------------------------- |
+| Atualizar trello                                       | 2            | Clarisse    | em alinhamento                    |
+| Criar deletarReceitaCore.teste.js e teste unitário     | 5            | Clarisse    | trabalhar em branch propia.       |
+| Refatorar Controllers (Separar Core de Controllers)    | 5            | Clarisse    | trabalhar em branch propia.o      |
+| Tabela de Endpoints e Status Codes previstos por rotas | 3            | Clarisse    | traaaaabalhar em branch propia.   |
+| Construir App.jsx                                      | 3            | Gabriele    | atender as definições da reunião. |
+| Reestruturação da pasta src e criação do app.js        | 2            | Gabriele    | trabalhar em branch propia.       |
+| Criar errorHandler                                     | 3            | Gabriele    | atender as definições da reunião. |
+| Ajustar receitasRoutes.js e server.js                  | 3            | Gabriele    | atender as definições da reunião. |
+| Copiar dados mocados do front pro back                 | 2            | Gabriele    | atender as definições da reunião. |
+| Buscar, atualizar e deletar no receitasController.js   | 3            | Gabriele    | Concluido                         |
+| Criar deletarReceitaCore.teste.js e teste unitário     | 5            | Gabriele    | trabalhar em branch propia.       |
+| Estrutura de Requests e Responses (JSON)               | 3            | Gabriele    | Concluido                         |
+| Refatorar ReceitaLista.jsx                             | 3            | Vianei      | Concluido                         |
+| Criar arquivo Receitalista.module.css                  | 3            | Vianei      | trabalhar em branch propia.       |
+| Atualizar ata                                          | 1            | Vianei      | pendente de definição do grupo.   |
+| Atualizar estimativas                                  | 2            | Vianei      | aguardar dados de origem          |
+| Recursos da API (Resources)                            | 3            | Vianei      | Concluido                         |
+| Criar atualizarReceitasCore.test.js e teste unitário   | 3            | Vianei      | Atentar para dats.                |
+
+## **Sprint Final (Unidade VII e VIII-)** _ 13/04/2026 a 24/04/2026_
+
+| Tarefa                                                                           | Story Points | Responsável | Observações                       |
+| -------------------------------------------------------------------------------- | ------------ | ----------- | --------------------------------- |
+| Implementar ReceitaModel.js e usuarioModel.js                                    | 3            | Clarisse    | Concluido                         |
+| Atualizar documentações (Diagramas, testes e Readme)                             | 3            | Clarisse    | Em andamento                      |
+| Atualizar Trello                                                                 | 2            | Clarisse    | atender as definições da reunião. |
+| Refatoração do receitasController                                                | 5            | Gabriele    | trabalhar em branch propia.       |
+| Criar rotas de usuarios (usuariosRoutes.js) e implementar (usuarioController.js) | 3            | Gabriele    | Concluido                         |
+| Atualizar documentações (sprints e api_design)                                   | 3            | Gabriele    | atender as definições da reunião. |
+| Criar o arquivo documentacaofinal.md                                             | 5            | Gabriele    | Em andamento                      |
+| Criar o arquivo de inicialização (init.js).                                      | 3            | Vianei      | trbalhar em branch propia.        |
+| Criar o arquivo database.js                                                      | 3            | Vianei      | trabalhar em branch propia.       |
+| Atualizar documentações (Atas, Estimativas, e criar pasta docs)                  | 3            | Vianei      | Em andamento                      |
