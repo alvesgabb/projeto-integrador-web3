@@ -4,10 +4,13 @@
   "description": "Desenvolvimento de um sistema web para gerenciamento de receitas culinárias.",
   "main": "server.js",
   "type": "module",
+  
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
-  },
+  "dev": "nodemon src/server.js",
+  "start": "node src/server.js",
+  "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+  "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alvesgabb/projeto-integrador-web3.git"
