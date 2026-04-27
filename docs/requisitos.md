@@ -10,7 +10,7 @@
 
 - **RF04:** O sistema deve permitir que o usuário exclua receitas.
 
-- **RF05:** O sistema deve permitir que o usuário vizualize apenas as suas própias receitas.
+- **RF05:** O sistema deve permitir que o usuário edite receitas.
 
 - **RF06:** O sistema deve armazenar as informações de usuários e receitas no banco de dados.
 
