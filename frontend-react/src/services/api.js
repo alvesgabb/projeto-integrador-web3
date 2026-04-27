@@ -3,7 +3,7 @@ const Base_URL = "http://localhost:3001";
 // Lista todas as receitas
 export async function fetchReceita() {
   const resposta = await fetch(`${Base_URL}/receitas`);
-  if (!resposta.ok) throw new error("Erro ao buscar receita");
+  if (!resposta.ok) throw new Error("Erro ao buscar receita");
   return resposta.json();
 }
 

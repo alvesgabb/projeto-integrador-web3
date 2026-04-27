@@ -4,9 +4,8 @@
 
 A API do sistema é organizada em torno dos seguintes recursos principais:
 
-- /receitas – Gerenciamento das receitas culinárias.
-- /usuarios – Cadastro e autenticação de usuários.
-- /auth – Processo de login e controle de acesso à área privada.
+- /receitas – Gerenciamento das receitas culinárias (Listagem, cadastro, edição e exclusão).
+- /usuarios – Gerenciamentos de usuários, incluindo o cadastro de novas contas e o login.
 
 ---
 
@@ -20,8 +19,8 @@ A API do sistema é organizada em torno dos seguintes recursos principais:
 | Receita | PUT | /receitas/{id} | Atualizar receita existente |
 | Receita | DELETE | /receitas/{id} | Excluir receita |
 | Usuário | POST | /usuarios | Criar usuário |
-| Auth | POST | /auth/login | Realizar login |
-| Auth | POST | /auth/logout | Fazer logout (sair da conta) |
+| Usuário | GET | /usuarios | Listar usuários |
+| Usuário | POST | /usuarios/login | Realizar login |
 
 ## 3. Estrutura de Requests e Responses (JSON)
 
@@ -50,18 +49,12 @@ A API do sistema é organizada em torno dos seguintes recursos principais:
 Resposta de sucesso – 201 Created:
 ```json
 {
-  "id": 101,
   "nome": "Bolo de chocolate",
-  "imagem": "https://receitasdamama.pt/wp-content/uploads/2023/07/Bolo-de-Chocolate-1.webp",
-  "ingredientes": [
-    "2 xícaras de farinha de trigo",
-    "3 ovos"
-  ],
-  "modo_de_preparo": [
-    "Tempo de preparo 1h",
-    "1- Massa: Bata os ovos..."
-  ],
+  "imagem": "URL_DA_IMAGEM",
+  "ingredientes": ["Trigo", "Ovos", "Chocolate"],
+  "modo_de_preparo": ["Bater tudo", "Assar"],
   "usuarioId": 1
+
 }
 
 ```
@@ -87,21 +80,19 @@ Resposta de erro – 400 Bad Request:
 Resposta de sucesso - 200 Created:
 ```json
 {
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "mensagem": "Login realizado com sucesso",
   "usuario": {
     "id": 1,
     "nome": "Gabriele",
     "email": "gabriele.alves@email.com"
-  },
-  "mensagem": "Login realizado com sucesso!"
+  }
 }
 ```
 
 Resposta de erro - 401 Unauthorized:
 ```json
 {
-  "error": "AUTH_ERROR",
-  "message": "E-mail ou senha incorretos."
+  "erro": "Senha inválida" 
 }
 ```
 
@@ -112,9 +103,7 @@ Resposta de erro - 401 Unauthorized:
 | GET /receitas         | 200 OK      | 500 (erro interno)                     |
 | GET /receitas/{id}    | 200 OK      | 404 (receita não encontrada)           |
 | POST /receitas        | 201 Created | 400 (dados inválidos)                  |
-| DELETE /receitas/{id} | 200 OK      | 404 (não encontrada)                   |
-| PUT /receitas/{id}    | 200 OK       | 400 (dados inválidos), ou 404 (não encontrada) |
-| POST /usuarios        | 201 Created | 400 (dados inválidos), 409 (já existe) |
-| POST /auth/login      | 200 OK      | 401 (não autorizado)                   |
-| POST /auth/logout     | 200 OK      | —                                      |
-
+| DELETE /receitas/{id} | 204 OK      | 404 (não encontrada)                   |
+| PUT /receitas/{id}    | 200 OK      | 400 (dados inválidos), ou 404 (não encontrada) |
+| POST /usuarios        | 201 Created | 400 (Falta nome/email/senha), 400 (Email já existe) |
+| POST /usuarios/login      | 200 OK  | 400 (Falta dados), 404 (Usuário não existe), 401 (Senha errada) |
